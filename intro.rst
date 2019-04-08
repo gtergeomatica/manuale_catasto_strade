@@ -7,6 +7,7 @@ Scopo del Catasto Strade
 
 Da alcuni anni la Protezione Civile del Comune di Genova ha deciso di dotarsi di un proprio sistema informativo
 per la gestione delle emergenze. In questo contesto, l’informazione territoriale gioca un ruolo fondamentale.
+PIPPO
 
 
 
