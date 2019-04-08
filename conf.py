@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Nuovo Sistema Emergenze Protezione Civile'
+project = u'Nuovo Catasto strade della Provincia di Piacenza'
 copyright = u'2019, Gter srl'
 author = u'Gter srl'
 
@@ -136,7 +136,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'NuovoSistemaEmergenzeProtezioneCiviledoc'
+htmlhelp_basename = 'NuovoCatastoStradeProvicnciaPiacenzadoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -163,7 +163,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'NuovoSistemaEmergenzeProtezioneCivile.tex', u'Nuovo Sistema Emergenze Protezione Civile Documentation',
+    (master_doc, 'NuovoCatastoStradeProvPC.tex', u'Nuovo Catasto Strade della Provincia di Piacenza',
      u'Gter srl', 'manual'),
 ]
 
