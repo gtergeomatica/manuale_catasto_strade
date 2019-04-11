@@ -21,11 +21,37 @@ Un eventuale nuovo progetto deve essere salvato all'interno della cartella Nuovo
 * progetti_pubblici: i progetti salvati in questa cartella e configurati per la pubblicazione su web sono accessibili a chiunque accedendo all'interfaccia web;
 * progetti_privati: i progetti salvati in questa cartella e configurati per la pubblicazione su web sono accessibili solo attraverso opportune password.
 
+Come già accennato, molte delle caratteristiche dell'interfaccia web possono essere definite impostando le proprietà del progetto e/o dei singoli layer direttamente da Qgis
 
-
-
+Proprietà del progetto
+"""""""""""""""""""""""""""""""""""""""""""
+In Qgis dal menù Progetto selezionare la voce Proprietà, si aprirà una finestra di dialogo da cui selezionare la voce 'Qgis server'
 .. image:: img/nuovo_evento.PNG
 
+Da qui si possono impostare diverse proprietà che verranno poi trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap. In particolare da qui è possibile definire:
+
+* Capabilities del Servizio:
+* Capabilities dei servizi WMS:
+* Capabilities dei servizi WMTS:
+* Capabilities dei servizi WFS:
+* Capabilities dei servizi WCS:
+
+Proprietà del layer
+"""""""""""""""""""""""""""""""""""""""""""
+Una volta caricati i dati all'interno del progetto Qgis, siano essi vettoriali, raster, altri servizi WMS, ecc., vengono visualizzati all'interno del pannello Layers (a sinistra).
+L'ordine con cui vengono disposti i diversi layer all'interno del pannello Layers determina l'ordine con cui saranno disposti i diversi layer nell'albero dei layer dell'interfaccia web (si veda ima sotto.) Inoltre l'ordine dei layer determina anche l'ordine di visualizzazione in caso di sovrapposizione delle geometrie. In Qgis infatti, il primo layer dall'alto è quello che si sovrappone a tutti gli altri che seguono. 
+.. image:: img/nuovo_evento.PNG
+
+Nell'esempio dell'immagine sopra, il layer bla si sovrappone infatti al layer blabla e blablabla.
+Clickando con il tasto destro del mouse su un singolo layer si accede a un menù dal quale selezionare la voce Proprietà, si aprirà una finestra da cui sara possibile impostare le caratteristtiche principali del layer (es. stile di rappresentazione, limiti di scala nella visualizzazione, caratteristiche della tabella associata per i dati vettoriali, ecc.) che verranno immediatamente trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap.
+
+In particolare dalle proprietà del layer è possibile definire:
+
+* Stile:
+* Etichette:
+* Proprietà dei campi della tabella:
+* Tipologia dei campi della tabella:
+* Visualizzazione del layer dipendente dalla scala:
 
 Il plugin lizmap
 -----------------------------------
