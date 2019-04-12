@@ -27,10 +27,14 @@ Proprietà del progetto
 """""""""""""""""""""""""""""""""""""""""""
 In Qgis dal menù Progetto selezionare la voce Proprietà, si aprirà una finestra di dialogo da cui selezionare la voce 'Qgis server'
 
-Da qui si possono impostare diverse proprietà che verranno poi trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap. In particolare da qui è possibile definire:
+Da qui si possono impostare diverse proprietà che verranno poi trasferite alinterfaccia web salvando il progetto stesso. In particolare da qui è possibile definire:
 
 * Capabilities del Servizio:
 .. image:: img/service_cap.png
+Si tratta di informazioni generali come il titolo dello strumento webGIS che può essere diverso da quello del file di progetto Qgis, i dati dell'ente e della persona di riferimento, una breve descrizione, ecc.
+Le informazioni inserite in questa finestra di dialogo saranno trasferite allo strumento web una volta salvato il progetto e sranno visibili cliccando sul pulsante 'Informazioni' nella toolbar alla sinistra dello schermo.
+.. image:: img/service_cap_web.png
+
 * Capabilities dei servizi WMS:
 * Capabilities dei servizi WMTS:
 * Capabilities dei servizi WFS:
