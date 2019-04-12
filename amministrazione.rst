@@ -26,11 +26,11 @@ Come già accennato, molte delle caratteristiche dell'interfaccia web possono es
 Proprietà del progetto
 """""""""""""""""""""""""""""""""""""""""""
 In Qgis dal menù Progetto selezionare la voce Proprietà, si aprirà una finestra di dialogo da cui selezionare la voce 'Qgis server'
-.. image:: img/nuovo_evento.PNG
 
 Da qui si possono impostare diverse proprietà che verranno poi trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap. In particolare da qui è possibile definire:
 
 * Capabilities del Servizio:
+.. image:: img/service_cap.png
 * Capabilities dei servizi WMS:
 * Capabilities dei servizi WMTS:
 * Capabilities dei servizi WFS:
