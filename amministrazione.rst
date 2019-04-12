@@ -33,14 +33,17 @@ Da qui si possono impostare diverse proprietà che verranno poi trasferite alint
 .. image:: img/service_cap.png
 Si tratta di informazioni generali come il titolo dello strumento webGIS che può essere diverso da quello del file di progetto Qgis, i dati dell'ente e della persona di riferimento, una breve descrizione, ecc.
 Le informazioni inserite in questa finestra di dialogo saranno trasferite allo strumento web una volta salvato il progetto e sranno visibili cliccando sul pulsante 'Informazioni' nella toolbar alla sinistra dello schermo.
+
 .. image:: img/service_cap_web.png
 
 * Capabilities dei servizi WMS:
 .. image:: img/wms_cap.png
 Da qui è possibile impostare l'estensione della mappa da visualizzare on line, i codici EPSG supportati dai servizi WMS, escludere determinati layer e layout di stampa dalla visualizzazione web, ecc.
+
 * Capabilities dei servizi WMTS:
 .. image:: img/wmts_cap.png
 Da qui si abilita l'interrogazione dei diversi layer che verranno pubblicati e visualizzati visualizzati nello strumento webGIS. Spuntando le caselle in corrispondenza del progetto tutti i layer caricati al suo interno saranno interrogabili lato web. Agendo invece sui singoli layer sarà invece possibile definire quali rendere interrogabili sul web e quali no.
+
 * Capabilities dei servizi WFS:
 .. image:: img/wfs_cap.png
 Da qui si abilita la pubblicazione dei singoli layer come servizi WFS che è necessaria per poter utilizzare alcuni tools propri dello strumento webGIS come l'editing on line, sia delle geometrie che delle tabelle associate, e la ricerca.
