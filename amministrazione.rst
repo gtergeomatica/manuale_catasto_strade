@@ -64,7 +64,11 @@ Clickando con il tasto destro del mouse su un singolo layer si accede a un menù
 
 In particolare dalle proprietà del layer è possibile definire:
 
-* Stile:
+* Stile: da questo menù è possibile impostare lo stile grafico con cui verranno rappresentate le geometrie del layer. Si possono creare stili molto semplici ma anche molto complessi, basati ad esempio sui valori univoci di una colonna della relativa tabella degli attributi o definire regole specifiche ad esempio per modificare la rappresentazione delle geometrie a seconda del livello di zoom della visualizzazione. Qualsiasi stile definito, dal più semplice al più complesso, verrà trasferito allo strumento webGIS una volta salvato il progetto Qgis.
+
+(mettere img con stili su qgis e stili su lizmap)
+.. image:: img/pippo.png
+
 * Etichette:
 * Proprietà dei campi della tabella:
 * Tipologia dei campi della tabella:
