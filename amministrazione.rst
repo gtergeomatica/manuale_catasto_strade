@@ -52,10 +52,14 @@ Anche in questo caso è possibile definire quali layer pubblicare come WFS e qua
 Proprietà del layer
 """""""""""""""""""""""""""""""""""""""""""
 Una volta caricati i dati all'interno del progetto Qgis, siano essi vettoriali, raster, altri servizi WMS, ecc., vengono visualizzati all'interno del pannello Layers (a sinistra).
-L'ordine con cui vengono disposti i diversi layer all'interno del pannello Layers determina l'ordine con cui saranno disposti i diversi layer nell'albero dei layer dell'interfaccia web (si veda ima sotto.) Inoltre l'ordine dei layer determina anche l'ordine di visualizzazione in caso di sovrapposizione delle geometrie. In Qgis infatti, il primo layer dall'alto è quello che si sovrappone a tutti gli altri che seguono. 
-.. image:: img/nuovo_evento.PNG
+L'ordine con cui vengono disposti i diversi layer all'interno del pannello Layers determina l'ordine con cui saranno disposti i diversi layer nell'albero dei layer dell'interfaccia web (si vedano immagini sotto.) Inoltre l'ordine dei layer determina anche l'ordine di visualizzazione in caso di sovrapposizione delle geometrie. In Qgis infatti, il primo layer dall'alto è quello che si sovrappone a tutti gli altri che seguono.
 
-Nell'esempio dell'immagine sopra, il layer bla si sovrappone infatti al layer blabla e blablabla.
+.. image:: img/ordine_layer.png
+
+.. image:: img/ordine_layer_web.png
+
+Nell'esempio delle immagine sopra, il layer 'giunzioni' si sovrappone infatti al layer 'route' e 'limiti_comunali'.
+
 Clickando con il tasto destro del mouse su un singolo layer si accede a un menù dal quale selezionare la voce Proprietà, si aprirà una finestra da cui sara possibile impostare le caratteristtiche principali del layer (es. stile di rappresentazione, limiti di scala nella visualizzazione, caratteristiche della tabella associata per i dati vettoriali, ecc.) che verranno immediatamente trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap.
 
 In particolare dalle proprietà del layer è possibile definire:
