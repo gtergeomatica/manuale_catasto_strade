@@ -66,10 +66,14 @@ In particolare dalle proprietà del layer è possibile definire:
 
 * Stile: da questo menù è possibile impostare lo stile grafico con cui verranno rappresentate le geometrie del layer. Si possono creare stili molto semplici ma anche molto complessi, basati ad esempio sui valori univoci di una colonna della relativa tabella degli attributi o definire regole specifiche ad esempio per modificare la rappresentazione delle geometrie a seconda del livello di zoom della visualizzazione. Qualsiasi stile definito, dal più semplice al più complesso, verrà trasferito allo strumento webGIS una volta salvato il progetto Qgis.
 
-(mettere img con stili su qgis e stili su lizmap)
-.. image:: img/pippo.png
+.. image:: img/qgis_gish.png
 
-* Etichette:
+* Etichette: da questo menù è possibile definire le caratteristiche grafiche e i contenuti delle etichette associate alle singole geometrie del layer. Anche in questo caso si possono creare etichette molto semplici (es. scegliendo una colonna della tabella associata come contenuto dell'etichetta) o più complesse (es. utilizzando espressioni e query sui dati per definirne il contenuto). Impostate le varie caratteristiche delle etichette che si vogliono visualizzare (es. contenuto, dimensioni, posizionamento limiti di scala, ecc.) queste saranno trasferite allo strumento webGIS salvando il progetto Qgis.
+
+.. image:: img/qgis_gish.png
+
+Ad esempio nel caso del layer dei Cippi di riferimento chilometrico la rappresentazione dell'evento puntuale è data dalla sola etichetta.
+
 * Proprietà dei campi della tabella:
 * Tipologia dei campi della tabella:
 * Visualizzazione del layer dipendente dalla scala:
