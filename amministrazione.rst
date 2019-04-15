@@ -95,10 +95,16 @@ Anche in questo caso eventuali limiti di visualizzazione dipendenti dalla scala 
 
 Il plugin lizmap
 -----------------------------------
+Un altro strumento che consente di gestire la pubblicazione e visualizzazione web dei dati tramite Qgis è il plugin Lizmap che può essere facilmente installato dal menù plugin.
+Il plugin Lizmap consente di impostare tutte le proprietà, strumenti, e funzioni che non vengono già impostate tramite le proprietà del progetto o dei layer, infatti dal qui si definiscono soprattutto le caratteristiche dello strumento webGIS.
 
+Opzioni di Mappa
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/opzioni_mappa.png
 
-
-
+Da qui è possibile attivare alcuni strumenti per lo strumento webGIS come gli strumenti di misura (lunghezza, area e perimetro), la stampa, ecc. In particolare lo strumento stampa consente di stampare immagini in scala e in diverso formato direttamente dall'interfaccia web. Lo strumento utilizza i layout di stampa definiti da qgis per il progetto mantenendone tutte le caratteristiche (es. dimensione della pagina, impaginazione, legenda, cartiglio, ecc.).
+Sempre dalle Opzioni di Mappa è anche posibile definire un set di scale predefinite per la visualizzazione e la stampa e l'estensione iniziale della mappa che può essere diversa da quella impostata dalle proprietà di progetto. L'estensione iniziale infatti può essere impostata dalle proprietà del progetto oppura dall'area di mappa del prgetto Qgis, in questo caso sarà necessario zoommare sull'area che si intende visualizzare al caricamento dello strumento webGIS e scegliere dal plugin Lizmap l'opzione 'imposta dall'area di mappa'.
+Da qui è inoltre possibile definire alcune caratteristiche dell'interfaccia web come visualizzare o meno la barra dei menù, la mappa di navigazione, la scala, ecc. e inoltre è possibile scegliere dove visualizzare i risultati dell'interrogazione dei dati (es. popup sulla mappa o pannello dedicato).
 
 Lizmap web client
 ---------------------------------------------------
