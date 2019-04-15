@@ -106,6 +106,32 @@ Da qui è possibile attivare alcuni strumenti per lo strumento webGIS come gli s
 Sempre dalle Opzioni di Mappa è anche posibile definire un set di scale predefinite per la visualizzazione e la stampa e l'estensione iniziale della mappa che può essere diversa da quella impostata dalle proprietà di progetto. L'estensione iniziale infatti può essere impostata dalle proprietà del progetto oppura dall'area di mappa del prgetto Qgis, in questo caso sarà necessario zoommare sull'area che si intende visualizzare al caricamento dello strumento webGIS e scegliere dal plugin Lizmap l'opzione 'imposta dall'area di mappa'.
 Da qui è inoltre possibile definire alcune caratteristiche dell'interfaccia web come visualizzare o meno la barra dei menù, la mappa di navigazione, la scala, ecc. e inoltre è possibile scegliere dove visualizzare i risultati dell'interrogazione dei dati (es. popup sulla mappa o pannello dedicato).
 
+Layers
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/layers.png
+
+Da qui è possibile definire alcune proprietà dei layer come il titolo che può essere diverso dal nome del layer caricato in Qgis e che verrà visualizzato nell'albero dei layer, se un layer è già attivo (acceso) o meno al caricamento dell'interfaccia web, definire eventuali layer di base tra quelli caricati nel progetto Qgis (es. CTR multiscala della Regione) che verranno quindi visualizzati nel manù dei layer di base nell'interfaccia web, se il layer è interrogabile e quindi attivare un popup cliccando sulle geometrie, ecc.
+
+Layer di base
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/layer_base.png
+
+Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta uan specifica API key.
+Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetto pubblicati con Lizmap.
+E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
+
+In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala della Regione Emilia Romagna e le ortofoto della piattaforma RealVista 1.0 fornite con licenza CC-BY-SA da e-GEOS (al momento non disponibile come sfondo per la stampa).
+
+Locate by layer
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/locate_layer.png
+
+Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta uan specifica API key.
+Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetto pubblicati con Lizmap.
+E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
+
+In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala della Regione Emilia Romagna e le ortofoto della piattaforma RealVista 1.0 fornite con licenza CC-BY-SA da e-GEOS (al momento non disponibile come sfondo per la stampa).
+
 Lizmap web client
 ---------------------------------------------------
 
