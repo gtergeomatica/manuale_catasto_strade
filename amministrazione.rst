@@ -97,6 +97,8 @@ Il plugin lizmap
 -----------------------------------
 Un altro strumento che consente di gestire la pubblicazione e visualizzazione web dei dati tramite Qgis è il plugin Lizmap che può essere facilmente installato dal menù plugin.
 Il plugin Lizmap consente di impostare tutte le proprietà, strumenti, e funzioni che non vengono già impostate tramite le proprietà del progetto o dei layer, infatti dal qui si definiscono soprattutto le caratteristiche dello strumento webGIS.
+Una volta terminata la configurazione tramite le varie opzioni del plugin Lizmap si devono applicare le impostazioni definite cliccando sul pulsante 'Applica' del plugin,  verràcreato e salvato un file di configurazione (nome progetto.qgs.cfg) e il progetto sarà immediatamente pubblicato sul repository dell’utente e reso visibile on line.
+
 
 Opzioni di Mappa
 """""""""""""""""""""""""""""""""""""""""""
@@ -126,11 +128,23 @@ Locate by layer
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/locate_layer.png
 
-Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta uan specifica API key.
-Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetto pubblicati con Lizmap.
-E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
+Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata.
+In questo caso sono state definite due ricerche:
+* sul layer route utilizzando la colonna Codice strada
+* sul layer progressive_1000 utilizzando la colonna contenente il numero della progressiva e la colonna Codice strada. In questo caso dall'interfaccia web sarà sufficiente selezionare il codice della strada su cui si vuole fare la ricerca per progressiva e poi il numero della progressiva che si vuole localizzare.
 
-In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala della Regione Emilia Romagna e le ortofoto della piattaforma RealVista 1.0 fornite con licenza CC-BY-SA da e-GEOS (al momento non disponibile come sfondo per la stampa).
+Modifica layer
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/editing.png
+
+Da qui è possibile definire uno o più layer che possono essere modificati via web. E' sufficiente scegliere dal menù a tendina il layer che si vuole rendere editabile e spuntare la casella corrispondente alle diverse opzioni di editing che si vogliono abilitare (creare nuovi elementi, modificare gli attributi di elementi esistenti, modificare la geometria di elementi esistenti o rimuovere elementi esistenti).
+
+In questo caso la modifica è stata abilitata per tutti i layer degli eventi puntuali e lineari dando la possibilità all'utente di creare nuovi elementi o modificare gli attributi di quelli esistenti.
+
+N.B. Per eventuali modifiche al progetto QGIS è sempre fondamentale salvare il progetto al termine della configurazione e
+comunque salvare nuovamente anche il file di configurazione lizmap semplicemente aprendo il plugin e cliccando su 'Applica'.
+Per eventuali modifiche alle sole configurazioni Lizmap è sufficiente salvare nuovamente il file di configurazione lizmap
+cliccando su salva al termine delle modifiche.
 
 Lizmap web client
 ---------------------------------------------------
