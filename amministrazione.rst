@@ -175,7 +175,7 @@ ossia delle aree di lavoro dove memorizzare dati della stessa tipologia:
 
 
 Lo schema *geometrie*
-"""""""""""""""""""""""""""""""""""
+...........................................
 
 Contiene le principali geometrie alla base del CS:
 
@@ -187,7 +187,7 @@ Contiene le principali geometrie alla base del CS:
 	
 	
 Gli schemi *eventop* e *eventol*
-""""""""""""""""""""""""""""""""""""
+...........................................
 Contengono gli eventi rispettivamente puntuali e lineari che sono stati opportunamente suddivisi per garantire una maggiore semplicita. 
 Ciascun evento puntuale o lineare che sia, contiene delle tabelle codificate, la cui decodifica e presente nello schema *normativa*.
 
@@ -198,13 +198,13 @@ La riorganizzazione del DB e dettagliata nell'immagine seguente:
 
 
 Lo schema *normativa*
-"""""""""""""""""""""""""""""""""""
+...........................................
 Contiene, come anticipato, una serie di tabelle non geometriche conenenti le varie decodifiche dei campi delle geometrie (siano esse route, elementi stradali, 
 giunzioni, eventi puntuali o lineari, etc.)
 
 
 Altri schemi
-"""""""""""""""""""""""""""""""""""
+...........................................
 Gli altri schemi sono invece di lavoro. In particolare:
 
 * lo schema * public* contiene alcune tabelle e viste "di servizio" usate da PostGIS per la gestione dei dati geografici
