@@ -27,6 +27,8 @@ Ricerca per attributo
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe src="https://www.youtube.com/embed/_BfZ0XfndTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+    
+"""""""""""""""""""""""""""""""""""""""""""""""
 
 Stampa
 -----------------------------
@@ -37,6 +39,8 @@ Stampa
         <iframe src="https://www.youtube.com/embed/DGpLJkqav9Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
     
+"""""""""""""""""""""""""""""""""""""""""""""""
+    
 Misura
 -----------------------------
 
@@ -46,3 +50,4 @@ Misura
         <iframe src="https://www.youtube.com/embed/Rnkttf-Z2nk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
+"""""""""""""""""""""""""""""""""""""""""""""""
