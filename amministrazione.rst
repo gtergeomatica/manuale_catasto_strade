@@ -158,7 +158,7 @@ Il geodatabase contiene tutti i dati del precedente CS che sono stati opportunam
 
 
 I dati
-=============================
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 Nella fattispecie nel nuovo geoDB i dati sono stati organizzati utilizzando i seguenti schemi, 
@@ -215,7 +215,8 @@ Gli altri schemi sono invece di lavoro. In particolare:
 
 
 Gli utenti
-=======================================
+""""""""""""""""""""""""""""""""""""""""""
+
 
 All'interno del DB PostgreSQL sono stati definiti due diversi utenti da utilizzare per chi deve fruire dei dati (oltre all'utente
 amministratore che invece in generale non deve venire usato se non per operazioni di manutenzione sul database):
