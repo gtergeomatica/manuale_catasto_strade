@@ -15,8 +15,7 @@ E' normalmente  costituito da tre componenti:
 
 GIS
 --------------------------------------
-*Geographic Information System* secondo l'acronimo inglese o *Sistema Informativo Territoriale* (SIT) usando l'acronimo italiano รจ definito come
-un insieme organizzato di procedure o metodi matematici, risorse umane e risorse materiali (dati e software) utilizzati per raccogliere,
+*Geographic Information System* secondo l'acronimo inglese o *Sistema Informativo Territoriale* (SIT) usando l'acronimo italiano è definito come un insieme organizzato di procedure o metodi matematici, risorse umane e risorse materiali (dati e software) utilizzati per raccogliere,
 aggiornare, condividere, elaborare e visualizzare informazioni utili alla pianificazione, progettazione e controllo del territorio e 
 delle sue infrastrutture.
 
