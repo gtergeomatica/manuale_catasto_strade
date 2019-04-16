@@ -148,21 +148,132 @@ comunque salvare nuovamente anche il file di configurazione lizmap semplicemente
 Per eventuali modifiche alle sole configurazioni Lizmap è sufficiente salvare nuovamente il file di configurazione lizmap
 cliccando su salva al termine delle modifiche.
 
+
+
+Il geodatabase PostgreSQL/PostGIS
+---------------------------------------------------
+I dati del nuovo Catasto Strade della Provincia di Piacenza sono stati importati in un nuovo geodatabase basato sul software *open source* [PostgreSQL](https://www.postgresql.org/) e sulla sua estensione spaziale [PostGIS](https://postgis.net/).
+
+Il geodatabase contiene tutti i dati del precedente CS che sono stati opportunamente ri-organizzati per garantire una maggiore semplicita.
+
+
+I dati
+=============================
+
+
+Nella fattispecie nel nuovo geoDB i dati sono stati organizzati utilizzando i seguenti schemi, 
+ossia delle aree di lavoro dove memorizzare dati della stessa tipologia:
+
+* eventol
+* eventop
+* geometrie
+* normativa
+* oracle
+* public
+* storico
+
+
+
+Lo schema *geometrie*
+"""""""""""""""""""""""""""""""""""
+
+Contiene le principali geometrie alla base del CS:
+
+* elementi_stradali: contiene le geometrie degli assi stradali (linee) che partono da una giunzione e arrivano ad un'altra e sono individuate da una prog_ini e da una prog_fin.
+* route: contiene le geometrie degli assi stradali unite fra di loro per ogni strada sulla base del cod_strada
+* giunzioni che separano gli elementi_stradali sono essenzialmente di due tipi: 
+	- confine comunale
+	- altro ossia le giunzioni con altre strade provinciali presenti sul CS
+	
+	
+Gli schemi *eventop* e *eventol*
+""""""""""""""""""""""""""""""""""""
+Contengono gli eventi rispettivamente puntuali e lineari che sono stati opportunamente suddivisi per garantire una maggiore semplicita. 
+Ciascun evento puntuale o lineare che sia, contiene delle tabelle codificate, la cui decodifica e presente nello schema *normativa*.
+
+La riorganizzazione del DB e dettagliata nell'immagine seguente:
+
+.. image:: img/riorganizzazione_DB.png
+
+
+
+Lo schema *normativa*
+"""""""""""""""""""""""""""""""""""
+Contiene, come anticipato, una serie di tabelle non geometriche conenenti le varie decodifiche dei campi delle geometrie (siano esse route, elementi stradali, 
+giunzioni, eventi puntuali o lineari, etc.)
+
+
+Altri schemi
+"""""""""""""""""""""""""""""""""""
+Gli altri schemi sono invece di lavoro. In particolare:
+
+* lo schema * public* contiene alcune tabelle e viste "di servizio" usate da PostGIS per la gestione dei dati geografici
+* gli schemi *oracle* e *storico* contengono i dati prelevati dal vecchio geodatabase. Nello schema oracle ci sono i dati cosi prelavati in automatico dal precedente geoDB, mentre nello schema storico ci sono alcuni dati non piu utilizzati in quanto ri-organizzati
+
+
+
+
+
+Gli utenti
+=======================================
+
+All'interno del DB PostgreSQL sono stati definiti due diversi utenti da utilizzare per chi deve fruire dei dati (oltre all'utente
+amministratore che invece in generale non deve venire usato se non per operazioni di manutenzione sul database):
+
+* catasto_strade_editor
+* catasto_strade_viewer
+
+Le password sono state comunicate privatamente agli amministratori di sistema.
+
+
+
 Lizmap web client
 ---------------------------------------------------
 
+L'interfaccia amministratore web e basata sul software open source lizmap [repository github] e consente le seguenti operazioni:
 
-aaa
-
+* gestione gruppi e utenti 
+* gestione delle cartelle dove pubblicare i progetti QGIS chiamate *repository*
 
 
 Aggiunta gruppi e utenti
 """""""""""""""""""""""""""""""""""""""""""
+
+Sono stati inizialmente configurati tre gruppi di utenti: 
+
+* cs_viewer_group: con permessi di visualizzazione dei repository privati
+* cs_editor_group: con permessi di visualizzazione dei repository privati ed editing, laddove configurato
+* admins: con permessi di amministratore della piattaforma web e quindi in grado di modificare i suddetti permessi, creare nuovi gruppi e/o utenti etc.
+
+
+Per ogni gruppo e stato creato un corrispondente utente di default (cs_viewer_group - cs_viewer; cs_editor_group - cs_editor) con password comunicate
+privatamente agli amministratori di sistema. Gli amministratori di sistema potranno a loro volta creare nuovi utenti o gruppi a seconda delle esigenze.
+
 
 
 
 
 Aggiunta/modifica repository
 """""""""""""""""""""""""""""""""""""""""""
+
+Per *repository* si intende una cartella del server dove collocare i progetti QGIS da pubblicare. I progetti andranno salvati in quella cartella e 
+tutti i dati utilizzati nei progetti andranno prelevati dal geodatabase PostgreSQL/PostGIS e/o da una o piu sottocartelle interne al repository stesso.
+I progetti salvati nella suddetta cartella e dotati del file *.cfg* prodotto dal *plugin lizmap* saranno automaticamente pubblicati su web.
+
+Per ciascun repository si possono definire dei permessi in funzione al gruppo di utenti:
+
+* visualizzare il repository
+* visualizzare il link ai geoservizi WMS/WMTS
+* editing sui dati (se opportunamente configurato)
+* visulizzare i dati completi anche se filtrati
+* ????
+
+Sono stati inizialmente configurati due repository: 
+
+* progetti_pubblici
+* progetti_privati
+
+
+
 
 
