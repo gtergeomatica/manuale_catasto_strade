@@ -173,7 +173,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'nuovosistemaemergenzeprotezionecivile', u'Nuovo Sistema Emergenze Protezione Civile Documentation',
+    (master_doc, 'NuovoCSPiacenza', u'Nuovo Catasto strade della Provincia di Piacenza Documentation',
      [author], 1)
 ]
 
@@ -184,8 +184,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'NuovoSistemaEmergenzeProtezioneCivile', u'Nuovo Sistema Emergenze Protezione Civile Documentation',
-     author, 'NuovoSistemaEmergenzeProtezioneCivile', 'One line description of project.',
+    (master_doc, 'NuovoCSPiacenza', u'Nuovo Catasto strade della Provincia di Piacenza Documentation',
+     author, 'NuovoCSPiacenza', 'One line description of project.',
      'Miscellaneous'),
 ]
 
