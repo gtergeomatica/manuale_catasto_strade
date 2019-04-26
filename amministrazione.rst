@@ -44,6 +44,7 @@ Da qui è possibile impostare l'estensione della mappa da visualizzare on line, 
 .. image:: img/wmts_cap.png
 Da qui si abilita l'interrogazione dei diversi layer che verranno pubblicati e visualizzati visualizzati nello strumento webGIS. Spuntando le caselle in corrispondenza del progetto tutti i layer caricati al suo interno saranno interrogabili lato web. Agendo invece sui singoli layer sarà invece possibile definire quali rendere interrogabili sul web e quali no.
 
+.. _wfs:
 * Capabilities dei servizi WFS:
 .. image:: img/wfs_cap.png
 Da qui si abilita la pubblicazione dei singoli layer come servizi WFS che è necessaria per poter utilizzare alcuni tools propri dello strumento webGIS come l'editing on line, sia delle geometrie che delle tabelle associate, e la ricerca.
@@ -128,7 +129,7 @@ Locate by layer
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/locate_layer.png
 
-Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata. Per i layer su cui si vuole fare la ricerca per attributo è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis.
+Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata. Per i layer su cui si vuole fare la ricerca per attributo è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis :ref:`wfs`.
 
 In questo caso sono state definite due ricerche:
 
