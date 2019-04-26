@@ -74,6 +74,8 @@ Una volta entrati con il proprio utente, qualora si abbiano i permessi per la mo
 * Nuovo evento puntuale: consente di aggiungere un nuovo evento puntuale a partire dalla progressiva della strada relativa
 * Nuovo evento lineare: consente di aggiungere un nuovo evento lineare a partire dalle progressive iniziale e finale dell'evento
 
+Edition tool
+
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
