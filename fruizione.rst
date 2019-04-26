@@ -62,3 +62,22 @@ Tabella attributi e selezione
     </div>
 
 """""""""""""""""""""""""""""""""""""""""""""""
+
+Editing eventi puntuali e lineari
+-----------------------------
+
+Per accedere agli strum,enti di editing dello strumento webGIS del Catasto Strade è necessario fare il login con il proprio utente e password. Solo alcuni utenti hanno i permessi necessari per poter procedere alla modifica e aggiunta on line degli eventi puntuali e lineari, quindi solo questi utenti una volta loggati potrenno visualizzare e utilizzare gli strumenti di editing.
+
+Una volta entrati con il proprio utente, qualora si abbiano i permessi per la modifica on line, saranno disponibili tre pulsanti nella toolbar laterale:
+
+* Edition: consente l'editing sia degli elementi puntuali che di quelli lineari a partire dalla geometria che deve essere disegnata dall'operatore sulla mappa
+* Nuovo evento puntuale: consente di aggiungere un nuovo evento puntuale a partire dalla progressiva della strada relativa
+* Nuovo evento lineare: consente di aggiungere un nuovo evento lineare a partire dalle progressive iniziale e finale dell'evento
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/7kGRwqG4Aqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+"""""""""""""""""""""""""""""""""""""""""""""""
