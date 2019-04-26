@@ -141,6 +141,17 @@ Da qui è possibile definire uno o più layer che possono essere modificati via 
 
 In questo caso la modifica è stata abilitata per tutti i layer degli eventi puntuali e lineari dando la possibilità all'utente di creare nuovi elementi o modificare gli attributi di quelli esistenti.
 
+Come si vede anche dall'immagine sopra, per nessun evento è stata abilitata la funzione di eliminazione delle geometrie e relativi attributi. Dallo strumento webgis infatti è possibile eliminare gli eventi semplicemente inserendo la data di eliminazione. In questo modo l'evento non sarà più visibile on line e sul relativo progetto qgis ma resta comunque salvata nella tabella dell'evento nel database grazie a una funzione di Filtro per data di eliminazione impostata sui layer degli eventi lineari e puntuali dal progetto Qgis.
+Pre procedere all'eliminazione effettiva di geometrie, che sono state inserite erroneamente o per testare lo strumento, è necessario caricare dal database, in un nuovo progetto Qgis quindi senza filtri preimpostati, la tabella dell'evento di cui si vogliono rimuovere definitivamente uno o più elementi e selezionare dalla relativa tabella degli attributi la o le righe corrispondenti alle geometrie che si vogliono eliminare.
+
+.. image:: img/seleziona_geom.png
+
+Una volta identificate e selezionate le geometrie da eliminare, è necessario attivare la modalità di modifica cliccando sul pulsante della toolbar della tabella identificato dall'icona con la matita e una volta attivata cliccare sul pulsante 'Elimina le geometrie selezionate' identificato dall'icona del cestino.
+
+.. image:: img/elimina_geom.png
+
+Terminata l'eliminazione è necessario salvare le modifiche premendo sul tasto salva e disabilitare la modalità di modifica premendo il tasto con la matita. Una volta salvate le modifiche le geometrie selezionate saranno eliminate definitivamente.
+
 ____________________________________________________________________________________________________________________________
 
 N.B. Per eventuali modifiche al progetto QGIS è sempre fondamentale salvare il progetto al termine della configurazione e
