@@ -79,12 +79,18 @@ Edition tool
 E' sufficiente selezionare dal menù a tendina il layer a cui si vuole aggiungere un nuovo evento puntuale o lineare e premere il tasto "Add". Una volta selezionato il layer si potrà procedere a disegnare la geometria sulla mappa.
 In caso di eventi puntuali con un solo click del mouse si crea la nuova geometria che potrà essere spostata tenendo premuto il tasto sinistro del mouse. Per quanto riguarda invece gli eventi lineari, cliccando con il mouse sulla mappa si crea la nuova geometria lineare, a ogni click del mouse corrisponde un nuovo vertice della geometria lineare, con il doppio click del mouse viene terminato l'editing della geometria. Modificando un veneto lineare si attivano inoltre alcuni strumenti di editing che permettono di spostare i singoli vertici della geometria lineare, traslarla, ruotarla e modificarla eliminandone una parte.
 
+Sullo strumento webGIS non sono implementate funzioni di snap, in fase di editing non è quindi possibile "agganciarsi" precisamente alle geometrie di route disegnando i nuovi eventi puntuali o lineari. Per ovviare quindi al problema di nuovi eventi non perfettamente collocati sulle route sono stati implementati lato database delle funzioni (triggers) che collocano punti e vertici degli elementi lineari esattamente sulle geometrie di route spostando la geometria disegnata dall'operatore sul punto più vicino della geometria route.
+
 Una volta disegnata la geometria si può procedere alla compilazione della tabella degli attributi relativa alla geometria appena disegnata. A seconda dell'evento che si sta modificando, si possono riempire i diversi campi della tabella inserendo manualmente l'informazione o scegliendola da menù a tendina in caso di colonne con relativa decodifica.
 Altre colonne come ad esempio 'data inserimento', 'data aggiornamento' o 'utente ultima modifica' non sono editabili in quanto vengono automaticamente riempite dal database al momento del salvataggio delle modifice. Nel caso ad esempio dell'evento lineare 'ponti e viadotti' è possibile caricare nelle colonne 'scheda vincolo' e 'scheda tecnica' allegati in formato pdf e nella colonna 'Foto' delle immagini semplicemente cliccando sul pulsante che peremette di scegliere il file dal proprio pc.
 Qualora le colonne definite obbligatorie lato progetto Qgis non venissero compilate, lo strumento restituirà un errore non permettendo all'operatore di salvare le modifiche.
 
 Terminato il disegno geometrico e compilata la tabella è possibile salvare il nuovo elemento premendo sul pulsante salva. Una volta salvata sarà immediatamente visibile sulla mappa.
 
+Nuovo evento puntuale
+""""""""""""""""""""""""""""""""
+Con questo strumento è possibile aggiungere nuovi eventi puntuali a partire dalla progressiva su cui si vuole collocare il nuovo evento. Anche in questo caso è sufficiente selezionare il layer da modificare e cliccare sul pulsante 'Compila attributi evento', varrà quindi visualizzato il form relativo alla tabella attributi dell'evento che si sta modificando e anche in questo caso sarà possibile riempire i singoli campi con le stesse modalità descritte per lo strumento precedente (es. compilazione manuale, menù a tendina, ecc.).
+Con questo strumento non si deve disegnare la geometria sulla mappa ma è necessario inserire il numero della progressiva su cui si vuole collocare il nuovo evento puntuale.
 
 .. raw:: html
 
