@@ -90,7 +90,20 @@ Terminato il disegno geometrico e compilata la tabella è possibile salvare il n
 Nuovo evento puntuale
 """"""""""""""""""""""""""""""""
 Con questo strumento è possibile aggiungere nuovi eventi puntuali a partire dalla progressiva su cui si vuole collocare il nuovo evento. Anche in questo caso è sufficiente selezionare il layer da modificare e cliccare sul pulsante 'Compila attributi evento', varrà quindi visualizzato il form relativo alla tabella attributi dell'evento che si sta modificando e anche in questo caso sarà possibile riempire i singoli campi con le stesse modalità descritte per lo strumento precedente (es. compilazione manuale, menù a tendina, ecc.).
-Con questo strumento non si deve disegnare la geometria sulla mappa ma è necessario inserire il numero della progressiva su cui si vuole collocare il nuovo evento puntuale.
+Con questo strumento non si deve disegnare la geometria sulla mappa ma è necessario inserire il numero della progressiva su cui si vuole collocare il nuovo evento puntuale e il codice strada.
+
+Nuovo evento puntuale
+""""""""""""""""""""""""""""""""
+Con questo strumento è possibile aggiungere nuovi eventi lineari a partire dalla progressiva di inizio e fine del evento. Anche in questo caso è sufficiente selezionare il layer da modificare e cliccare sul pulsante 'Compila attributi evento', varrà quindi visualizzato il form relativo alla tabella attributi dell'evento che si sta modificando e anche in questo caso sarà possibile riempire i singoli campi con le stesse modalità descritte per lo strumento precedente (es. compilazione manuale, menù a tendina, ecc.).
+Con questo strumento non si deve disegnare la geometria sulla mappa ma è necessario inserire il numero della progressiva di inizio e di fine del nuovo evento lineare e il codice strada e automaticamente verrà creata una nuova geometria lineare con inizio e fine nelle progressive indicate e con l'andamento del tratto di route identificata dal codice strada indicato.
+
+Modifica degli attributi e eliminazione delle geometrie esistenti
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Per modificare gli attributi di un evento puntuale o lineare esistente è sufficiente identificare l'evento che si vuole modificare dallo strumento tabella attributi o semplicemente cliccandoci sopra con il mouse e cliccare sul tool edit (identificato dall'icona con la matita) che compare nella toolbar alla riga della tabella corrispondente all'evento che si vuole modificare o nella toolbar del popup che si apre cliccando dalla mappa sull'evento. Una volta attivato lo strumento edit per il singolo elemento sarà possibile modificarne gli attributi contenuti nella tabella.
+
+seguendo la stessa procedura descritto sopra si può anche procedere all'eliminazione di un elemento. In questo caso una volta attivato lo strumento Edit è sufficiente inserire in corrispondenza del campo 'Data eliminazione' la data in cui viene eliminato l'elemento servendosi del calendario che compare cliccando sull'apposito pulsante. Una volta inserita la data di eliminazione e salvate le modifiche, l'evento eliminato non sarà più visualizzato.
+
+NB. Con questa procedura di eliminazione la geometria non viene più visualizzata sia nello strumento webGIS che nel progetto Qgis ma la geometria resta comunque salvata nel data base. Per procedere all'effettiva eliminazione dell'evento (es. in caso di errori grossolani, test o altro) rivolgersi agli amministratori di sistema del Servizio Strade della Provincia di Piacenza. 
 
 .. raw:: html
 
