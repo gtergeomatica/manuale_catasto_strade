@@ -128,16 +128,23 @@ Locate by layer
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/locate_layer.png
 
-Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata.
+Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata. Per i layer su cui si vuole fare la ricerca per attributo è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis.
 In questo caso sono state definite due ricerche:
 * sul layer route utilizzando la colonna Codice strada
 * sul layer progressive_1000 utilizzando la colonna contenente il numero della progressiva e la colonna Codice strada. In questo caso dall'interfaccia web sarà sufficiente selezionare il codice della strada su cui si vuole fare la ricerca per progressiva e poi il numero della progressiva che si vuole localizzare.
+
+Attribute table
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/tabella_attr.png
+
+Da qui è possibile definire uno o più layer di cui visualizzare on line la relativa tabella degli attributi. E' sufficiente scegliere dal menù a tendina il layer di cui si vuole visualizzare la tabella attributi e indicare la colonna che contiene il codice identificativo univoco (es. colonna ID) e cliccare sul tasto 'Aggiungi layer'. Per i layer di cui si vuole visualizzare on line la tabbella degli attributi è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis.
+
 
 Modifica layer
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/editing.png
 
-Da qui è possibile definire uno o più layer che possono essere modificati via web. E' sufficiente scegliere dal menù a tendina il layer che si vuole rendere editabile e spuntare la casella corrispondente alle diverse opzioni di editing che si vogliono abilitare (creare nuovi elementi, modificare gli attributi di elementi esistenti, modificare la geometria di elementi esistenti o rimuovere elementi esistenti).
+Da qui è possibile definire uno o più layer che possono essere modificati via web. E' sufficiente scegliere dal menù a tendina il layer che si vuole rendere editabile e spuntare la casella corrispondente alle diverse opzioni di editing che si vogliono abilitare (creare nuovi elementi, modificare gli attributi di elementi esistenti, modificare la geometria di elementi esistenti o rimuovere elementi esistenti) e cliccare sul tasto 'Aggiungi layer'. Per i layer per cui si vuole abilitare l'editing on line è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis.
 
 In questo caso la modifica è stata abilitata per tutti i layer degli eventi puntuali e lineari dando la possibilità all'utente di creare nuovi elementi o modificare gli attributi di quelli esistenti.
 
