@@ -128,7 +128,7 @@ Locate by layer
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/locate_layer.png
 
-Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata. Per i layer su cui si vuole fare la ricerca per attributo è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis.
+Da qui è possibile definire uno o più layer su cui effettuare delle ricerche ad esempio per una o due specifiche colonne della tabella attributi associata. Per i layer su cui si vuole fare la ricerca per attributo è necessario attivare le WFS capabilities dalle proprietà del progetto Qgis :ref:proprieta-del-progetto.
 In questo caso sono state definite due ricerche:
 * sul layer route utilizzando la colonna Codice strada
 * sul layer progressive_1000 utilizzando la colonna contenente il numero della progressiva e la colonna Codice strada. In questo caso dall'interfaccia web sarà sufficiente selezionare il codice della strada su cui si vuole fare la ricerca per progressiva e poi il numero della progressiva che si vuole localizzare.
