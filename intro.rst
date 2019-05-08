@@ -5,7 +5,7 @@ Introduzione
 Scopo del Catasto Strade
 ------------------------------------------
 
-n seguito all’emanazione del DM 3484/2001  la Provincia di Piacenza,  a disposizione di legge, tra il 2004 e il 2007 si è dotata di un Catasto Strade (CS) di livello 2 basato su un plugin di ArcGIS e DB Oracle.
+In seguito all’emanazione del DM 3484/2001  la Provincia di Piacenza,  a disposizione di legge, tra il 2004 e il 2007 si è dotata di un Catasto Strade (CS) di livello 2 basato su un plugin di ArcGIS e DB Oracle.
 Al variare delle versioni di ArcGIS il plugin realizzato per conto della Provincia non è stato più aggiornato e pertanto ha cominciato a non funzionare. In sostanza ad oggi è quasi inutilizzabile. 
 L’esigenza è stata quindi quella di recuperare i dati presenti nel vecchio CS e dotarsi di un nuovo strumento che fosse, possibilmente, più usabile rispetto al precedente.
 
