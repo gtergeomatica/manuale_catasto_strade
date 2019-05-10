@@ -31,8 +31,8 @@ Da qui si possono impostare diverse proprietà che verranno poi trasferite all'i
 
 * Capabilities del Servizio:
 .. image:: img/service_cap.png
-Si tratta di informazioni generali come il titolo dello strumento webGIS che può essere diverso da quello del file di progetto Qgis, i dati dell'ente e della persona di riferimento, una breve descrizione, ecc.
-Le informazioni inserite in questa finestra di dialogo saranno trasferite allo strumento web una volta salvato il progetto e sranno visibili cliccando sul pulsante 'Informazioni' nella toolbar alla sinistra dello schermo.
+Si tratta di informazioni generali, come il titolo dello strumento webGIS (che può essere diverso da quello del file di progetto Qgis), i dati dell'ente e della persona di riferimento, una breve descrizione, ecc.
+Le informazioni inserite in questa finestra di dialogo saranno trasferite allo strumento web una volta salvato il progetto, e saranno visibili cliccando sul pulsante 'Informazioni' nella toolbar alla sinistra dello schermo.
 
 .. image:: img/service_cap_web.png
 
@@ -46,8 +46,8 @@ Da qui si abilita l'interrogazione dei diversi layer che verranno pubblicati e v
 
 * Capabilities dei servizi WFS:
 .. image:: img/wfs_cap.png
-Da qui si abilita la pubblicazione dei singoli layer come servizi WFS che è necessaria per poter utilizzare alcuni tools propri dello strumento webGIS come l'editing on line, sia delle geometrie che delle tabelle associate, e la ricerca.
-Anche in questo caso è possibile definire quali layer pubblicare come WFS e quali no. Spuntando le diverse caselle in corrispondenza di ogni layer si abilita la pubblicazione come WFS, la modifica, inserimento e rimozione delle geometrie e relative informazioni alfanumeriche.
+Da qui si abilita la pubblicazione dei singoli layer come servizi WFS. Questo passaggio è necessario per poter utilizzare alcuni tools propri dello strumento webGIS quali l'editing on line sia delle geometrie che delle tabelle associate, e la ricerca.
+Anche in questo caso è possibile definire quali layer pubblicare come WFS e quali no. Spuntando le diverse caselle in corrispondenza di ogni layer si abilita la pubblicazione come WFS, la modifica, l'inserimento e la rimozione delle geometrie e le relative informazioni alfanumeriche.
 
 Proprietà del layer
 """""""""""""""""""""""""""""""""""""""""""
@@ -60,11 +60,11 @@ L'ordine con cui vengono disposti i diversi layer all'interno del pannello Layer
 
 Nell'esempio delle immagine sopra, il layer 'giunzioni' si sovrappone infatti al layer 'route' e 'limiti_comunali'.
 
-Clickando con il tasto destro del mouse su un singolo layer si accede a un menù dal quale selezionare la voce Proprietà, si aprirà una finestra da cui sara possibile impostare le caratteristtiche principali del layer (es. stile di rappresentazione, limiti di scala nella visualizzazione, caratteristiche della tabella associata per i dati vettoriali, ecc.) che verranno immediatamente trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap.
+Cliccando con il tasto destro del mouse su un singolo layer si accede ad un menù dal quale selezionare la voce Proprietà. Da qui si aprirà una finestra da cui sarà possibile impostare le caratteristtiche principali del layer (es. stile di rappresentazione, limiti di scala nella visualizzazione, caratteristiche della tabella associata per i dati vettoriali, ecc.) che verranno immediatamente trasferite alinterfaccia web salvando il progetto stesso e utilizzando il plugin lizmap.
 
 In particolare dalle proprietà del layer è possibile definire:
 
-* Stile: da questo menù è possibile impostare lo stile grafico con cui verranno rappresentate le geometrie del layer. Si possono creare stili molto semplici ma anche molto complessi, basati ad esempio sui valori univoci di una colonna della relativa tabella degli attributi o definire regole specifiche ad esempio per modificare la rappresentazione delle geometrie a seconda del livello di zoom della visualizzazione. Qualsiasi stile definito, dal più semplice al più complesso, verrà trasferito allo strumento webGIS una volta salvato il progetto Qgis.
+* Stile: da questo menù è possibile impostare lo stile grafico con cui verranno rappresentate le geometrie del layer. Si possono creare stili molto semplici ma anche molto complessi, basati ad esempio sui valori univoci di una colonna della relativa tabella degli attributi o definire regole specifiche, ad esempio per modificare la rappresentazione delle geometrie a seconda del livello di zoom di visualizzazione. Qualsiasi stile definito, dal più semplice al più complesso, verrà trasferito allo strumento webGIS una volta salvato il progetto Qgis.
 
 .. image:: img/qgis_gish.png
 
@@ -86,7 +86,7 @@ Ad esempio per le colonne di decodifica si è scelta la tipologia 'Mappa Valore'
 
 .. image:: img/value_map.png
 
-Altre tipologia utilizzate sono ad esempio 'Modifica testo' che permette di scrivere manualmente all'interno della cella selezionata, 'Data/Ora' che consente di inserire testi in formato data selezionandoli direttamente da un calendario che comparirà selezionando la cella, 'Nascosto' che permette di nascondere la colonna in fase di editing del dato.
+Altre tipologie utilizzate sono ad esempio 'Modifica testo' che permette di scrivere manualmente all'interno della cella selezionata, 'Data/Ora' che consente di inserire testi in formato data selezionandoli direttamente da un calendario che comparirà selezionando la cella, 'Nascosto' che permette di nascondere la colonna in fase di editing del dato.
 Da qui inoltre è possibile definire se una colonna è modificabile, se può contenere valori nulli, un alias per il nome della colonna, ecc.
 Anche in questo caso tutte le caratteristiche definite per le singole colonne della tabella associata al singolo layer saranno trasferite allo strumento webGIS una volta salvato il progetto Qgis.
 
@@ -97,7 +97,7 @@ Il plugin lizmap
 -----------------------------------
 Un altro strumento che consente di gestire la pubblicazione e visualizzazione web dei dati tramite Qgis è il plugin Lizmap che può essere facilmente installato dal menù plugin.
 Il plugin Lizmap consente di impostare tutte le proprietà, strumenti, e funzioni che non vengono già impostate tramite le proprietà del progetto o dei layer, infatti dal qui si definiscono soprattutto le caratteristiche dello strumento webGIS.
-Una volta terminata la configurazione tramite le varie opzioni del plugin Lizmap si devono applicare le impostazioni definite cliccando sul pulsante 'Applica' del plugin,  verràcreato e salvato un file di configurazione (nome progetto.qgs.cfg) e il progetto sarà immediatamente pubblicato sul repository dell’utente e reso visibile on line.
+Una volta terminata la configurazione, tramite le varie opzioni del plugin Lizmap, si devono applicare le impostazioni definite cliccando sul pulsante 'Applica' del plugin; verrà quindi creato e salvato un file di configurazione (nome progetto.qgs.cfg) e il progetto sarà immediatamente pubblicato sul repository dell’utente e reso visibile on line.
 
 
 Opzioni di Mappa
