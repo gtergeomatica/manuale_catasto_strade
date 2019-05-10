@@ -25,7 +25,7 @@ Elementi stradali, route e giunzioni
 -------------------------------------
 Si tatta degli elementi alla base del Catasto Strade di livello 2:
 
-* Il lyer *giunzioni* contiene i punti che uniscono due elementi_stradali e sono essenzialmente di due tipi: 
+* Il layer *giunzioni* contiene i punti che uniscono due elementi_stradali e sono essenzialmente di due tipi: 
 	- confine comunale
 	- altro che racchiude tutte le giunzioni fra due diverse strade provinciali (caratterizzate da un diverso cod_strada) presenti sul CS
 * Il layer *elementi_stradali* contiene le geometrie degli assi stradali (linee) che partono da una giunzione e arrivano ad un'altra e sono individuate da una prog_ini e da una prog_fin.
