@@ -27,7 +27,7 @@ Proprietà del progetto
 """""""""""""""""""""""""""""""""""""""""""
 In Qgis dal menù Progetto selezionare la voce Proprietà, si aprirà una finestra di dialogo da cui selezionare la voce 'Qgis server'
 
-Da qui si possono impostare diverse proprietà che verranno poi trasferite alinterfaccia web salvando il progetto stesso. In particolare da qui è possibile definire:
+Da qui si possono impostare diverse proprietà che verranno poi trasferite all'interfaccia web salvando il progetto stesso. In particolare da qui è possibile definire:
 
 * Capabilities del Servizio:
 .. image:: img/service_cap.png
