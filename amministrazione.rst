@@ -120,7 +120,7 @@ Layer di base
 
 Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta uan specifica API key.
 Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetto pubblicati con Lizmap.
-E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
+E\' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
 
 In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala e l' Ortofoto della Regione Emilia Romagna (NB. a causa di limitazioni del WMS dell'ortofoto regionale, questo layer di base al momento non disponibile come sfondo per la stampa).
 
