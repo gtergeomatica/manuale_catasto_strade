@@ -104,8 +104,8 @@ Opzioni di Mappa
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/opzioni_mappa.png
 
-Da qui è possibile attivare alcuni strumenti per lo strumento webGIS come gli strumenti di misura (lunghezza, area e perimetro), la stampa, ecc. In particolare lo strumento stampa consente di stampare immagini in scala e in diverso formato direttamente dall'interfaccia web. Lo strumento utilizza i layout di stampa definiti da qgis per il progetto mantenendone tutte le caratteristiche (es. dimensione della pagina, impaginazione, legenda, cartiglio, ecc.).
-Sempre dalle Opzioni di Mappa è anche posibile definire un set di scale predefinite per la visualizzazione e la stampa e l'estensione iniziale della mappa che può essere diversa da quella impostata dalle proprietà di progetto. L'estensione iniziale infatti può essere impostata dalle proprietà del progetto oppura dall'area di mappa del prgetto Qgis, in questo caso sarà necessario zoommare sull'area che si intende visualizzare al caricamento dello strumento webGIS e scegliere dal plugin Lizmap l'opzione 'imposta dall'area di mappa'.
+Da qui è possibile attivare alcune opzioni per il progetto webGIS quali gli strumenti di misura (lunghezza, area e perimetro), la stampa, ecc. In particolare lo strumento stampa consente di stampare immagini in scala e in diverso formato direttamente dall'interfaccia web. Lo strumento utilizza i layout di stampa definiti da qgis per il progetto mantenendone tutte le caratteristiche (es. dimensione della pagina, impaginazione, legenda, cartiglio, ecc.).
+Sempre dalle Opzioni di Mappa è anche posibile definire un set di scale predefinite per la visualizzazione, la stampa e l'estensione iniziale della mappa, che può essere diversa da quella impostata dalle proprietà di progetto. L'estensione iniziale infatti può essere impostata dalle proprietà del progetto oppure dall'area di mappa del prgetto Qgis. In questo caso sarà necessario zoommare sull'area che si intende visualizzare al caricamento dello strumento webGIS, e scegliere dal plugin Lizmap l'opzione 'imposta dall'area di mappa'.
 Da qui è inoltre possibile definire alcune caratteristiche dell'interfaccia web come visualizzare o meno la barra dei menù, la mappa di navigazione, la scala, ecc. e inoltre è possibile scegliere dove visualizzare i risultati dell'interrogazione dei dati (es. popup sulla mappa o pannello dedicato).
 
 Layers
@@ -118,8 +118,8 @@ Layer di base
 """""""""""""""""""""""""""""""""""""""""""
 .. image:: img/layer_base.png
 
-Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta uan specifica API key.
-Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetto pubblicati con Lizmap.
+Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comuni sfondi cartografici come OpenStreetMap (OSM) o Google, Bing ecc. per i quali però è richiesta una specifica API key.
+Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetti pubblicati con Lizmap.
 E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
 
 In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala e l' Ortofoto della Regione Emilia Romagna (NB. a causa di limitazioni del WMS dell'ortofoto regionale, questo layer di base al momento non disponibile come sfondo per la stampa).
@@ -210,7 +210,7 @@ Contiene le principali geometrie alla base del CS:
 Gli schemi *eventop* e *eventol*
 ...........................................
 Contengono gli eventi rispettivamente puntuali e lineari che sono stati opportunamente suddivisi per garantire una maggiore semplicita. 
-Ciascun evento puntuale o lineare che sia, contiene delle tabelle codificate, la cui decodifica e presente nello schema *normativa*.
+Ciascun evento, puntuale o lineare che sia, contiene delle tabelle codificate, la cui decodifica e presente nello schema *normativa*.
 
 La riorganizzazione del DB e dettagliata nell'immagine seguente:
 
@@ -220,7 +220,7 @@ La riorganizzazione del DB e dettagliata nell'immagine seguente:
 
 Lo schema *normativa*
 ...........................................
-Contiene, come anticipato, una serie di tabelle non geometriche conenenti le varie decodifiche dei campi delle geometrie (siano esse route, elementi stradali, 
+Contiene, come anticipato, una serie di tabelle non geometriche contenti le varie decodifiche dei campi delle geometrie (siano esse route, elementi stradali, 
 giunzioni, eventi puntuali o lineari, etc.)
 
 
@@ -228,7 +228,7 @@ Altri schemi
 ...........................................
 Gli altri schemi sono invece di lavoro. In particolare:
 
-* lo schema * public* contiene alcune tabelle e viste "di servizio" usate da PostGIS per la gestione dei dati geografici
+* lo schema *public* contiene alcune tabelle e viste "di servizio" usate da PostGIS per la gestione dei dati geografici
 * gli schemi *oracle* e *storico* contengono i dati prelevati dal vecchio geodatabase. Nello schema oracle ci sono i dati cosi prelavati in automatico dal precedente geoDB, mentre nello schema storico ci sono alcuni dati non piu utilizzati in quanto ri-organizzati
 
 
@@ -252,7 +252,7 @@ Le password sono state comunicate privatamente agli amministratori di sistema.
 Lizmap web client
 ---------------------------------------------------
 
-L'interfaccia amministratore web e basata sul software open source lizmap [repository github] e consente le seguenti operazioni:
+L'interfaccia amministratore web e basata sul software open source lizmap [repository github](https://github.com/3liz/lizmap-web-client) e consente le seguenti operazioni:
 
 * gestione gruppi e utenti 
 * gestione delle cartelle dove pubblicare i progetti QGIS chiamate *repository*
@@ -268,7 +268,7 @@ Sono stati inizialmente configurati tre gruppi di utenti:
 * admins: con permessi di amministratore della piattaforma web e quindi in grado di modificare i suddetti permessi, creare nuovi gruppi e/o utenti etc.
 
 
-Per ogni gruppo e stato creato un corrispondente utente di default (cs_viewer_group - cs_viewer; cs_editor_group - cs_editor) con password comunicate
+Per ogni gruppo è stato creato un corrispondente utente di default (cs_viewer_group - cs_viewer; cs_editor_group - cs_editor) con password comunicate
 privatamente agli amministratori di sistema. Gli amministratori di sistema potranno a loro volta creare nuovi utenti o gruppi a seconda delle esigenze.
 
 
