@@ -5,7 +5,7 @@ Fruizione dell'interfaccia web
 
 L'interfaccia web del nuovo strumento webGIS per la gestione del Catasto Strade è semplice, intuitiva e di facile utilizzo.
 
-E' composta principalmente dall'area di mappa dove vengono visualizzati i dati, due toolbar da cui si accede alle principali funzionalità (es. stampa, editing, strumenti di misura e ricerca, ecc.) o agli strumenti di zoom e pan, l'albero dei layer da cui è possibile accendere/spegnere i singoli layer, o l'intero gruppo, che verranno automaticamente visualizzati nell'area di mappa e un menu da cui selezionare lo sfondo cartografico da visualizzare in area di mappa.
+E' composta principalmente dall'area di mappa dove vengono visualizzati i dati, due toolbar da cui si accede alle principali funzionalità (es. stampa, editing, strumenti di misura e ricerca, ecc.) o agli strumenti di zoom e pan, l'albero dei layer da cui è possibile accendere/spegnere i singoli layer o l'intero gruppo, che verranno automaticamente visualizzati nell'area di mappa, e un menu da cui selezionare lo sfondo cartografico da visualizzare in area di mappa.
 
 Funzionalità di base
 -----------------------------
@@ -66,7 +66,7 @@ Tabella attributi e selezione
 Editing eventi puntuali e lineari
 -----------------------------
 
-Per accedere agli strum,enti di editing dello strumento webGIS del Catasto Strade è necessario fare il login con il proprio utente e password. Solo alcuni utenti hanno i permessi necessari per poter procedere alla modifica e aggiunta on line degli eventi puntuali e lineari, quindi solo questi utenti una volta loggati potrenno visualizzare e utilizzare gli strumenti di editing.
+Per accedere agli strumenti di editing dello strumento webGIS del Catasto Strade è necessario fare il login con il proprio utente e password. Solo alcuni utenti hanno i permessi necessari per poter procedere alla modifica e aggiunta on line degli eventi puntuali e lineari, quindi solo questi utenti, una volta loggati, potranno visualizzare e utilizzare gli strumenti di editing.
 
 Una volta entrati con il proprio utente, qualora si abbiano i permessi per la modifica on line, saranno disponibili tre pulsanti nella toolbar laterale:
 
@@ -101,7 +101,7 @@ Modifica degli attributi e eliminazione delle geometrie esistenti
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Per modificare gli attributi di un evento puntuale o lineare esistente è sufficiente identificare l'evento che si vuole modificare dallo strumento tabella attributi o semplicemente cliccandoci sopra con il mouse e cliccare sul tool edit (identificato dall'icona con la matita) che compare nella toolbar alla riga della tabella corrispondente all'evento che si vuole modificare o nella toolbar del popup che si apre cliccando dalla mappa sull'evento. Una volta attivato lo strumento edit per il singolo elemento sarà possibile modificarne gli attributi contenuti nella tabella.
 
-seguendo la stessa procedura descritto sopra si può anche procedere all'eliminazione di un elemento. In questo caso una volta attivato lo strumento Edit è sufficiente inserire in corrispondenza del campo 'Data eliminazione' la data in cui viene eliminato l'elemento servendosi del calendario che compare cliccando sull'apposito pulsante. Una volta inserita la data di eliminazione e salvate le modifiche, l'evento eliminato non sarà più visualizzato.
+Seguendo la stessa procedura descritta sopra si può anche procedere all'eliminazione di un elemento. In questo caso una volta attivato lo strumento Edit è sufficiente inserire in corrispondenza del campo 'Data eliminazione' la data in cui viene eliminato l'elemento servendosi del calendario che compare cliccando sull'apposito pulsante. Una volta inserita la data di eliminazione e salvate le modifiche, l'evento eliminato non sarà più visualizzato.
 
 NB. Con questa procedura di eliminazione la geometria non viene più visualizzata sia nello strumento webGIS che nel progetto Qgis ma la geometria resta comunque salvata nel data base. Per procedere all'effettiva eliminazione dell'evento (es. in caso di errori grossolani, test o altro) rivolgersi agli amministratori di sistema del Servizio Strade della Provincia di Piacenza).
 
