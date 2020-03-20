@@ -189,6 +189,7 @@ ________________________________________________________________________________
 
 N.B. Per eventuali modifiche al progetto QGIS è sempre fondamentale salvare il progetto al termine della configurazione e
 comunque salvare nuovamente anche il file di configurazione lizmap semplicemente aprendo il plugin e cliccando su 'Applica'.
+E' stata recentemente aggiunta un'opzione sul plugin lizmap che consente di salvare direttamente il progetto QGIS riducendo di fatto i 2 passaggi in 1.
 Per eventuali modifiche alle sole configurazioni Lizmap è sufficiente salvare nuovamente il file di configurazione lizmap
 cliccando su salva al termine delle modifiche.
 
