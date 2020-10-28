@@ -162,10 +162,34 @@ Una volta identificate e selezionate le geometrie da eliminare, è necessario at
 
 Terminata l'eliminazione è necessario salvare le modifiche premendo sul tasto salva e disabilitare la modalità di modifica premendo il tasto con la matita. Una volta salvate le modifiche le geometrie selezionate saranno eliminate definitivamente.
 
+
+Filtri sui layer
+"""""""""""""""""""""""""""""""""""""""""""
+.. image:: img/filtri.PNG
+
+E' anche possibile realizzare specifici filtri sui layer caricati sul progetto QGIS. E' possibile scegliere
+
+- il layer
+- il campo da filtrare
+- la tipologia di campo:
+	* testo libero
+	* valori unici (menù a tendina o opzione di scelta)
+	* valori numerici
+	* data 
+- specificare altre modalità specifiche in funzione di quanto scelto sopra
+
+Quanto scelto dall'amministratore comparirà in un nuovo tasto della toolbar laterale del Catasto Strade su web laddove sarà possibile, per l'utente, scegliere come filtrare i dati 
+e anche come esportare il file .ods (foglio di calcolo libreoffice) con i risultati del filtro.
+
+
+
+
+
 ____________________________________________________________________________________________________________________________
 
 N.B. Per eventuali modifiche al progetto QGIS è sempre fondamentale salvare il progetto al termine della configurazione e
 comunque salvare nuovamente anche il file di configurazione lizmap semplicemente aprendo il plugin e cliccando su 'Applica'.
+E' stata recentemente aggiunta un'opzione sul plugin lizmap che consente di salvare direttamente il progetto QGIS riducendo di fatto i 2 passaggi in 1.
 Per eventuali modifiche alle sole configurazioni Lizmap è sufficiente salvare nuovamente il file di configurazione lizmap
 cliccando su salva al termine delle modifiche.
 
