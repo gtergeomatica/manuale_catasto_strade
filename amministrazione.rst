@@ -171,6 +171,23 @@ cliccando su salva al termine delle modifiche.
 
 
 
+Manuale e registrazione utente in editing (javascript code)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Ci sono due semplici script javascript che si consiglia di aggiungere essere aggiunti al progetto lizmap.
+
+Per agggiungerli:
+
+1. accedere alla cartella media/js
+2. verificare la presenza o meno di una cartella con il *nome_progetto* su cui si vuole agire. Qualora non ci fosse crearla
+2. copiare i 2 script dentro la cartella con il *nome_progetto*. I due script si chiamano:
+	- login.js: gestisce la registrazione automatica dell'utente che effettua modifiche ai dati del CS
+	- add_help_button.js: aggiunge il link a questo manuale sulla pagina del progetto
+
+.. image:: img/login_js.PNG
+
+
+
+
 Il geodatabase PostgreSQL/PostGIS
 ---------------------------------------------------
 I dati del nuovo Catasto Strade della Provincia di Piacenza sono stati importati in un nuovo geodatabase basato sul software *open source* [PostgreSQL](https://www.postgresql.org/) e sulla sua estensione spaziale [PostGIS](https://postgis.net/).
@@ -231,6 +248,31 @@ Gli altri schemi sono invece di lavoro. In particolare:
 * lo schema *public* contiene alcune tabelle e viste "di servizio" usate da PostGIS per la gestione dei dati geografici
 * gli schemi *oracle* e *storico* contengono i dati prelevati dal vecchio geodatabase. Nello schema oracle ci sono i dati cosi prelavati in automatico dal precedente geoDB, mentre nello schema storico ci sono alcuni dati non piu utilizzati in quanto ri-organizzati
 
+
+
+Viste
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Per la creazione di nuovi progetti dedicati (es. il progetto pubblico della Transitabilità) si consiglia l'utilizzo di viste SQL. 
+Si tratta di specifiche query sulle tabelle degli eventi puntuali e lineari che possono essere salvate sul DB in modo da poter:
+
+- decidere quali campi si vogliono visualizzare
+- decidere l'ordine con il quale visualizzarli
+- effettuare eventuali filtri
+
+NB: ricordarsi di portare sempre dietro il campo id che poi si nasconderà in editing e visualizzazione usando le proprietà del layer di QGIS 
+
+Nell'esempio sottostante si selezionano le limitazioni temporanee al traffico attualmente in vigore (**WHERE d_tipo_limitazione='T' and data_elimi>=now()::date**) definendo l'ordine con cui visualizzare i vari campi della tabella "eventol"."t_transitabilita". 
+
+La query viene salvata con il nome di *v_transitabilita_temporanea* dentro lo schema *eventol* grazie alla sintassi **CREATE OR REPLACE VIEW ... AS**
+
+.. code-block:: sql
+	CREATE OR REPLACE VIEW eventol.v_transitabilita_temporanea as
+	SELECT id,geom, cod_strada,
+	d_tipo_ostacolo,d_tipologia_ordinanza,descrizione_cantiere,
+	limite_velocita,limite_portata,prog_ini,prog_fin,
+	data_vigore,data_elimi,provvedimento,d_tipo_limitazione,login
+	FROM "eventol"."t_transitabilita"
+	WHERE d_tipo_limitazione='T' and data_elimi>=now()::date;
 
 
 
