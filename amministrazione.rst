@@ -202,10 +202,10 @@ Ci sono due semplici script javascript che si consiglia di aggiungere essere agg
 Per agggiungerli:
 
 1. accedere alla cartella media/js
-2. verificare la presenza o meno di una cartella con il *nome_progetto* su cui si vuole agire. Qualora non ci fosse crearla
-2. copiare i 2 script dentro la cartella con il *nome_progetto*. I due script si chiamano:
-	- login.js: gestisce la registrazione automatica dell'utente che effettua modifiche ai dati del CS
-	- add_help_button.js: aggiunge il link a questo manuale sulla pagina del progetto
+2. verificare la presenza o meno di una cartella con il **nome_progetto** su cui si vuole agire. Qualora non ci fosse crearla
+2. copiare i 2 script dentro la cartella con il **nome_progetto**. I due script si chiamano:
+	- **login.js**: gestisce la registrazione automatica dell'utente che effettua modifiche ai dati del CS
+	- **add_help_button.js**: aggiunge il link a questo manuale sulla pagina del progetto
 
 .. image:: img/login_js.PNG
 
@@ -285,11 +285,12 @@ Si tratta di specifiche query sulle tabelle degli eventi puntuali e lineari che 
 
 NB: ricordarsi di portare sempre dietro il campo id che poi si nasconderà in editing e visualizzazione usando le proprietà del layer di QGIS 
 
-Nell'esempio sottostante si selezionano le limitazioni temporanee al traffico attualmente in vigore (**WHERE d_tipo_limitazione='T' and data_elimi>=now()::date**) definendo l'ordine con cui visualizzare i vari campi della tabella "eventol"."t_transitabilita". 
+Nell'esempio sottostante si selezionano le limitazioni temporanee al traffico attualmente in vigore (*WHERE d_tipo_limitazione='T' and data_elimi>=now()::date*) definendo l'ordine con cui visualizzare i vari campi della tabella "eventol"."t_transitabilita". 
 
-La query viene salvata con il nome di *v_transitabilita_temporanea* dentro lo schema *eventol* grazie alla sintassi **CREATE OR REPLACE VIEW ... AS**
+La query viene salvata con il nome di **v_transitabilita_temporanea** dentro lo schema **eventol** grazie alla sintassi *CREATE OR REPLACE VIEW ... AS*
 
 .. code-block:: sql
+
 	CREATE OR REPLACE VIEW eventol.v_transitabilita_temporanea as
 	SELECT id,geom, cod_strada,
 	d_tipo_ostacolo,d_tipologia_ordinanza,descrizione_cantiere,
