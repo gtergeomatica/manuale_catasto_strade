@@ -287,8 +287,6 @@ NB: ricordarsi di portare sempre dietro il campo id che poi si nasconderà in ed
 
 Nell'esempio sottostante si selezionano le limitazioni temporanee al traffico attualmente in vigore (*WHERE d_tipo_limitazione='T' and data_elimi>=now()::date*) definendo l'ordine con cui visualizzare i vari campi della tabella "eventol"."t_transitabilita". 
 
-La query viene salvata con il nome di **v_transitabilita_temporanea** dentro lo schema **eventol** grazie alla sintassi *CREATE OR REPLACE VIEW ... AS*
-
 .. code-block:: sql
 
 	CREATE OR REPLACE VIEW eventol.v_transitabilita_temporanea as
@@ -299,6 +297,7 @@ La query viene salvata con il nome di **v_transitabilita_temporanea** dentro lo 
 	FROM "eventol"."t_transitabilita"
 	WHERE d_tipo_limitazione='T' and data_elimi>=now()::date;
 
+La query viene salvata con il nome di **v_transitabilita_temporanea** dentro lo schema **eventol** grazie alla sintassi *CREATE OR REPLACE VIEW ... AS*
 
 
 
