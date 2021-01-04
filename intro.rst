@@ -19,9 +19,8 @@ Le caratteristiche del Nuovo CS  realizzato da [Gter](https://www.gter.it) sono 
 
 I referenti del CS interni alla Provincia sono: 
 
-* Davide Marenghi tel. 0523-795241 
-* Francesca Putzolu
-* Valeria Toscani 
+* Massimo Rivetti 
+* 
 
 
 
