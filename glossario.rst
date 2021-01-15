@@ -31,6 +31,8 @@ Si tatta degli elementi alla base del Catasto Strade di livello 2:
 * Il layer *elementi_stradali* contiene le geometrie degli assi stradali (linee) che partono da una giunzione e arrivano ad un'altra e sono individuate da una prog_ini e da una prog_fin.
 * Infine il layer *route* contiene le geometrie degli assi stradali unite fra di loro per ogni strada sulla base del cod_strada
 
+A questi layer è affiancato il layer *progressive* che contine le indicazioni chilometriche calcolate sulla base delle progressive amministrative iniziali e finali degli elemnti stradali con visualizzazione variabile in funzione della scala.
+
 
 
 Eventi puntuali e lineari
