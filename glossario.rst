@@ -31,6 +31,8 @@ Si tatta degli elementi alla base del Catasto Strade di livello 2:
 * Il layer *elementi_stradali* contiene le geometrie degli assi stradali (linee) che partono da una giunzione e arrivano ad un'altra e sono individuate da una prog_ini e da una prog_fin.
 * Infine il layer *route* contiene le geometrie degli assi stradali unite fra di loro per ogni strada sulla base del cod_strada
 
+A questi layer di base è affiancato il layer *progressive* che contine le indicazioni chilometriche calcolate sulla base delle progressive amministrative iniziali e finali degli elementi stradali con visualizzazione variabile in funzione della scala.
+
 
 
 Eventi puntuali e lineari
@@ -42,50 +44,59 @@ Nella fattispecie:
 Gli **eventi puntuali** attualmente presenti sul CS sono: 
 
 
-* t_areatraffico
-* t_cipporifkm
-* t_concessioni
-* t_datipatrimoniali
-* t_gruppoluminoso
-* t_grupposegnale
-* t_operecontinuitaidraulica"
+* t_accessi (Accessi)
+* t_attrlineeelettriche (Attraversamento linee elettriche)
+* t_baypass (Bypass)
+* t_casecantoniere (Case cantoniere)
+* t_cippi (Cippi)
+* t_illuminazionepuntuale (Illuminazione puntuale)
+* t_impiantipubblicitati (Impianti pubblicitari)
+* t_operecontinuitaidraulica (Opere di continuità idraulica)
+* t_rotatorie (Rotatorie)
+* t_segnaleticaorizzontale (Segnaletica orizzontale)
+* t_segnaleticaverticaale (Segnaletica verticale)
+* t_sezionestradale (Sezione stradale)
+* t_sicurezzastradale (Sicurezza stradale)
+* t_verde (Verde)
 
 Oltre a:
 
-* r_segnalefisico
-* r_pubblicita
+* r_segnaleticacomponenti (Segnaletica verticale - Componenti)
 
 
 
 Gli **eventi lineari** attualmente presenti sul CS sono: 
 
-* t_corpostradale
-* t_protezambientecircostante
-* t_corsia
-* t_protezcorpostradale
-* t_cunettemargine
-* t_sezionestradale
-* t_direzionemarcia
-* t_sismicita
-* t_dispositivoritenuta
-* t_piazzolesosta
-* t_sovrappassisottopassi
-* t_gallerie
-* t_tortuosita
-* t_illuminazione
-* t_transitabilita
-* t_marciapiedi
-* t_arginelli
-* t_operesostegno
-* t_vegetazione
-* t_banchine
-* t_orografia
-* t_centriabitati
-* t_passaggilivello
-* t_pistaciclabile
-* t_pavimentazionecarreggiata
-* t_canalifiumi
-* t_pontiviadotti
+* t_arginelli (Arginelli)
+* t_carreggiate (Tratte omogenee - Carreggiate)
+* t_centriabitati (Centri abitati)
+* t_corpo (Corpo stradale)
+* t_corsie (Tratte omogenee - Corsie)
+* t_cunette (Cunette)
+* t_delimitazionetratta (Delimitazione tratte)
+* t_elementononcensito (Elementi non  censiti)
+* t_fosso (Fossi)
+* t_galleriesovrappassi (Gallerie e sovrappassi)
+* t_illuminazionelineare (Illuminazione lineare)
+* t_intersezioni (Intersezioni)
+* t_lineeelettricheparallele (Linee elettriche parallele)
+* t_marciapiedi (Marciapiedi)
+* t_pavimentazione (Pavimentazione)
+* t_pertinenzediservizio (Pertinenze di servizio)
+* t_piazzole (Piazzole)
+* t_pisteciclabili (Piste ciclabili)
+* t_pontiviadottisottopassi (Ponti)
+* t_protezioneambiente (Dispositivi di protenzione ambientale)
+* t_ritenuta (Dispositivi di ritenuta)
+* t_sezione (Sezione)
+* t_tracciati (Tracciati)
+* t_trattideclassificati (Tratti declassificati)
+
+Oltre a:
+
+* r_schedecontrollo (Ponti - Schede di controllo)
+* r_schedecontrollo_img (Ponti - Schede di controllo - Immagini )
+* r_schedeponte (Ponti - Schede ponte)
  
 
 
