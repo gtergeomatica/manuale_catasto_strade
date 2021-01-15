@@ -122,7 +122,7 @@ Da qui è possibile definire ulteriori layer di base scegliendo fra alcuni comun
 Inoltre è possibile definire come layer di base altri WMS prodotti con Qgis server e che derivano da altri progetti pubblicati con Lizmap.
 E' anche possibile definire se aggiungere un layer di base vuoto e quale layer di base visualizzare al caricamento dell'interfaccia web.
 
-In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala e l' Ortofoto della Regione Emilia Romagna (NB. a causa di limitazioni del WMS dell'ortofoto regionale, questo layer di base al momento non disponibile come sfondo per la stampa).
+In questo caso sono stati definiti come layer di base OSM Mapnik (a colori) e OSM Toner (in bianco e nero), la CTR multiscala e l' Ortofoto della Regione Piemonte.
 
 Locate by layer
 """""""""""""""""""""""""""""""""""""""""""
@@ -214,7 +214,7 @@ Per agggiungerli:
 
 Il geodatabase PostgreSQL/PostGIS
 ---------------------------------------------------
-I dati del nuovo Catasto Strade della Provincia di Piacenza sono stati importati in un nuovo geodatabase basato sul software *open source* [PostgreSQL](https://www.postgresql.org/) e sulla sua estensione spaziale [PostGIS](https://postgis.net/).
+I dati del nuovo Catasto Strade della Provincia di Novara sono stati importati in un nuovo geodatabase basato sul software *open source* [PostgreSQL](https://www.postgresql.org/) e sulla sua estensione spaziale [PostGIS](https://postgis.net/).
 
 Il geodatabase contiene tutti i dati del precedente CS che sono stati opportunamente ri-organizzati per garantire una maggiore semplicita.
 
@@ -230,7 +230,6 @@ ossia delle aree di lavoro dove memorizzare dati della stessa tipologia:
 * eventop
 * geometrie
 * normativa
-* oracle
 * public
 * storico
 
