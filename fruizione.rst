@@ -115,7 +115,7 @@ NB. Con questa procedura di eliminazione la geometria non viene più visualizzat
 
 Ponti e Viadotti - note compilazione form
 """"""""""""""""""""""""""""""""""""""""""""""
-Istruzioni
+**Istruzioni**
 
 La tabella attributi del layer del layer “Ponti e Viadotti” è stata redatta seguendo il modello della “Scheda di censimento ponti di Livello 0” del Ministero delle Infrastrutture e della Mobilità Sostenibile  (link: https://www.mit.gov.it/sites/default/files/media/notizia/2020-05/3_All_A_Scheda_censimento_ponti.pdf) . 
 
@@ -147,4 +147,4 @@ Si aprirà il form di compilazione degli attributi, ma questa volta in fondo all
 .. image:: img/note_form4.PNG
    :align: center
 
-ATTENZIONE: per cancellare una geometria, sarà prima necessario cancellare i dati nelle tabelle figlie, se questi sono prsenti.
+**ATTENZIONE**: per cancellare una geometria, sarà prima necessario cancellare i dati nelle tabelle figlie, se questi sono prsenti.
