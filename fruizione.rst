@@ -117,11 +117,11 @@ Ponti e Viadotti - note compilazione form
 """"""""""""""""""""""""""""""""""""""""""""""
 **Istruzioni**
 
-La tabella attributi del layer del layer “Ponti e Viadotti” è stata redatta seguendo il modello della “Scheda di censimento ponti di Livello 0” del Ministero delle Infrastrutture e della Mobilità Sostenibile  (link: https://www.mit.gov.it/sites/default/files/media/notizia/2020-05/3_All_A_Scheda_censimento_ponti.pdf) . 
+La tabella attributi del layer del layer "Ponti e Viadotti" è stata redatta seguendo il modello della "Scheda di censimento ponti di Livello 0" del Ministero delle Infrastrutture e della Mobilità Sostenibile  (link: https://www.mit.gov.it/sites/default/files/media/notizia/2020-05/3_All_A_Scheda_censimento_ponti.pdf) . 
 
-Con il fine di semplificare la fruibilità del form di compilazione, questo è stato impostato per essere a "visibilità dinamica” quando si è in presenza campi “dipendenti”, cioè che hanno senso di essere compilati solo nel caso sia compilato un altro campo (o più semplicemente spuntato), o nel caso in cui quest'ultimo assuma uno specifico valore. Così facendo, si sono nascosti i “campi dipendenti”, i quali vengono visualizzati solo al verificarsi di una particolare condizione sul campo da cui “dipendono”. Questo è il caso di specificazioni e note aggiuntive.
+Con il fine di semplificare la fruibilità del form di compilazione, questo è stato impostato per essere a "visibilità dinamica" quando si è in presenza campi "dipendenti", cioè che hanno senso di essere compilati solo nel caso sia compilato un altro campo (o più semplicemente spuntato), o nel caso in cui quest'ultimo assuma uno specifico valore. Così facendo, si sono nascosti i "campi dipendenti", i quali vengono visualizzati solo al verificarsi di una particolare condizione sul campo da cui "dipendono". Questo è il caso di specificazioni e note aggiuntive.
 
-Prendendo ad esempio il gruppo “Classi di Conseguenza (Secondo Definizione EN 1990:2002)”, come possiamo vedere nelle immagini sotto riportate, il campo “Adeguata giustificazione se inferiore a CC3” compare solo se il campo “Classi di conseguenza” assume i valori “CC1” e CC2”, ma non nel caso assuma valore “CC3”.
+Prendendo ad esempio il gruppo "Classi di Conseguenza (Secondo Definizione EN 1990:2002)", come possiamo vedere nelle immagini sotto riportate, il campo "Adeguata giustificazione se inferiore a CC3" compare solo se il campo "Classi di conseguenza" assume i valori "CC1" e "CC2", ma non nel caso assuma valore "CC3".
 
 .. image:: img/note_form1.PNG
   :align: center
@@ -134,18 +134,18 @@ Inoltre, per aiutare la compilazione, si sono aggiunti dei tooltip al passaggio 
 .. image:: img/note_form3.PNG
   :align: center
 
-Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi presenti, si è inserito in fondo al form il campo “note”.
+Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi presenti, si è inserito in fondo al form il campo "note".
 
-È stata necessaria la creazione di una “tabella figlia” per gli allegati, considerando come “tabella padre” il layer “Ponti e Viadotti”. Questo è stato fatto principalmente per due motivi: a) natura di alcuni dati, che potrebbero essere multipli per la stessa geometria; b) per una migliore organizzazione del form. 
+È stata necessaria la creazione di una "tabella figlia" per gli allegati, considerando come "tabella padre" il layer "Ponti e Viadotti". Questo è stato fatto principalmente per due motivi: a) natura di alcuni dati, che potrebbero essere multipli per la stessa geometria; b) per una migliore organizzazione del form. 
 
-Non è possibile però popolare “la tabella figlia” mentre si crea la geometria, ma bisogna agire in un secondo momento. Per fare ciò, si seleziona la geometria con il mouse e si clicca “Modifica” (icona con la matita) dal popup.
+Non è possibile però popolare la "tabella figlia" mentre si crea la geometria, ma bisogna agire in un secondo momento. Per fare ciò, si seleziona la geometria con il mouse e si clicca "Modifica" (icona con la matita) dal popup.
 
 .. image:: img/note_form5.PNG
   :align: center
 
-Si aprirà il form di compilazione degli attributi, ma questa volta in fondo alla pagina saranno presenti le tabelle figlie e attraverso un menù a tendina sarà possibile selezionarle e modificarle.
+Si aprirà il form di compilazione degli attributi, ma questa volta in fondo alla pagina saranno presenti le "tabelle figlie" e attraverso un menù a tendina sarà possibile selezionarle e modificarle.
 
 .. image:: img/note_form4.PNG
    :align: center
 
-**ATTENZIONE**: per cancellare una geometria, sarà prima necessario cancellare i dati nelle tabelle figlie, se questi sono prsenti.
+**ATTENZIONE**: per cancellare una geometria, sarà prima necessario cancellare i dati nelle "tabelle figlie", se questi sono prsenti.
