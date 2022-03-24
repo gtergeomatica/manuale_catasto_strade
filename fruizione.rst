@@ -124,14 +124,14 @@ Con il fine di semplificare la fruibilità del form di compilazione, questo è s
 Prendendo ad esempio il gruppo “Classi di Conseguenza (Secondo Definizione EN 1990:2002)”, come possiamo vedere nelle immagini sotto riportate, il campo “Adeguata giustificazione se inferiore a CC3” compare solo se il campo “Classi di conseguenza” assume i valori “CC1” e CC2”, ma non nel caso assuma valore “CC3”.
 
 .. image:: img/note_form1.PNG
-:align: right
+  :align: right
 .. image:: img/note_form2.PNG
-:align: left
+  :align: left
 
 Inoltre, per aiutare la compilazione, si sono aggiunti dei tooltip al passaggio del mouse su alcuni campi (contraddistinti da un asterisco nero "*" in fondo al nome), con suggerimenti e note informative. 
 
 .. image:: img/note_form3.PNG
-:align: center
+  :align: center
 
 Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi presenti, si è inserito in fondo al form il campo "note".
 
@@ -140,7 +140,7 @@ Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi 
 Non è possibile però popolare “la tabella figlia” mentre si crea la geometria, ma bisogna agire in un secondo momento. Per fare ciò, si seleziona la geometria con il mouse e si clicca “Modifica” (icona con la matita) dal popup.
 
 .. image:: img/note_form5.PNG
-:align: center
+  :align: center
 
 Si aprirà il form di compilazione degli attributi, ma questa volta in fondo alla pagina saranno presenti le tabelle figlie e attraverso un menù a tendina sarà possibile selezionarle e modificarle.
 
