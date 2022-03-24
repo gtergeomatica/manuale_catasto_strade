@@ -126,3 +126,4 @@ Prendendo ad esempio il gruppo “Classi di Conseguenza (Secondo Definizione EN 
 .. image:: img/note_form1.PNG
 .. image:: img/note_form2.PNG
 
+
