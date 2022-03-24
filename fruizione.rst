@@ -124,10 +124,10 @@ Con il fine di semplificare la fruibilità del form di compilazione, questo è s
 Prendendo ad esempio il gruppo “Classi di Conseguenza (Secondo Definizione EN 1990:2002)”, come possiamo vedere nelle immagini sotto riportate, il campo “Adeguata giustificazione se inferiore a CC3” compare solo se il campo “Classi di conseguenza” assume i valori “CC1” e CC2”, ma non nel caso assuma valore “CC3”.
 
 .. image:: img/note_form1.PNG
-  :align: right
+  :align: center
   
 .. image:: img/note_form2.PNG
-  :align: left
+  :align: center
 
 Inoltre, per aiutare la compilazione, si sono aggiunti dei tooltip al passaggio del mouse su alcuni campi (contraddistinti da un asterisco nero "*" in fondo al nome), con suggerimenti e note informative. 
 
