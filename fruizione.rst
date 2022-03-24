@@ -134,5 +134,12 @@ Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi 
 
 È stata necessaria la creazione di una “tabella figlia” per gli allegati, considerando come “tabella padre” il layer “Ponti e Viadotti”. Questo è stato fatto principalmente per due motivi: a) natura di alcuni dati, che potrebbero essere multipli per la stessa geometria; b) per una migliore organizzazione del form. 
 
-Non è possibile però popolare “la tabella figlia” mentre si crea la geometria, ma bisogna agire in un secondo momento. Per fare ciò, si seleziona la geometria con il mouse, e si clicca “Modifica” (icona con la matita) dal popup.
+Non è possibile però popolare “la tabella figlia” mentre si crea la geometria, ma bisogna agire in un secondo momento. Per fare ciò, si seleziona la geometria con il mouse e si clicca “Modifica” (icona con la matita) dal popup.
 
+.. image:: img/note_form5.PNG
+
+Si aprirà il form di compilazione degli attributi, ma questa volta in fondo alla pagina saranno presenti le tabelle figlie e attraverso un menù a tendina sarà possibile selezionarle e modificarle.
+
+.. image:: img/note_form4.PNG
+
+ATTENZIONE: per cancellare una geometria, sarà prima necessario cancellare i dati nelle tabelle figlie, se questi sono prsenti.
