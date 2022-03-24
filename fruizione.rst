@@ -145,6 +145,6 @@ Non è possibile però popolare “la tabella figlia” mentre si crea la geomet
 Si aprirà il form di compilazione degli attributi, ma questa volta in fondo alla pagina saranno presenti le tabelle figlie e attraverso un menù a tendina sarà possibile selezionarle e modificarle.
 
 .. image:: img/note_form4.PNG
-:align: center
+:align:center
 
 ATTENZIONE: per cancellare una geometria, sarà prima necessario cancellare i dati nelle tabelle figlie, se questi sono prsenti.
