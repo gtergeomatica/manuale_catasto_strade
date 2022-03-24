@@ -32,7 +32,7 @@ extensions = [
 
 # -- Project information -----------------------------------------------------
 
-project = u'Nuovo Catasto strade della Provincia di Piacenza'
+project = u'Nuovo Catasto strade della Provincia di Novara'
 copyright = u'2019, Gter srl'
 author = u'Gter srl'
 
@@ -237,7 +237,7 @@ html_show_copyright = True
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'NuovoCatastoStradeProvicnciaPiacenzadoc'
+htmlhelp_basename = 'NuovoCatastoStradeProvicnciaNovaradoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -264,7 +264,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'NuovoCatastoStradeProvPC.tex', u'Nuovo Catasto Strade della Provincia di Piacenza',
+    (master_doc, 'NuovoCatastoStradeProvPC.tex', u'Nuovo Catasto Strade della Provincia di Novara',
      u'Gter srl', 'manual'),
 ]
 
@@ -274,7 +274,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'NuovoCSPiacenza', u'Nuovo Catasto strade della Provincia di Piacenza Documentation',
+    (master_doc, 'NuovoCSNovara', u'Nuovo Catasto strade della Provincia di Novara Documentation',
      [author], 1)
 ]
 
@@ -285,8 +285,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'NuovoCSPiacenza', u'Nuovo Catasto strade della Provincia di Piacenza Documentation',
-     author, 'NuovoCSPiacenza', 'One line description of project.',
+    (master_doc, 'NuovoCSNovara', u'Nuovo Catasto strade della Provincia di Novara Documentation',
+     author, 'NuovoCSNovara', 'One line description of project.',
      'Miscellaneous'),
 ]
 
