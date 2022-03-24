@@ -117,4 +117,11 @@ Ponti e Viadotti - note compilazione form
 """"""""""""""""""""""""""""""""""""""""""""""
 Istruzioni
 
-"""""""""""""""""""""""""""""""""""""""""""""""
+La tabella attributi del layer del layer “Ponti e Viadotti” è stata redatta seguendo il modello della “Scheda di censimento ponti di Livello 0” del Ministero delle Infrastrutture e della Mobilità Sostenibile  (link: https://www.mit.gov.it/sites/default/files/media/notizia/2020-05/3_All_A_Scheda_censimento_ponti.pdf) . 
+
+Con il fine di semplificare la fruibilità del form di compilazione, questo è stato impostato per essere a "visibilità dinamica” quando si è in presenza campi “dipendenti”, cioè che hanno senso di essere compilati solo nel caso sia compilato un altro campo (o più semplicemente spuntato), o nel caso in cui quest'ultimo assuma uno specifico valore. Così facendo, si sono nascosti i “campi dipendenti”, i quali vengono visualizzati solo al verificarsi di una particolare condizione sul campo da cui “dipendono”. Questo è il caso di specificazioni e note aggiuntive.
+
+Prendendo ad esempio il gruppo “Classi di Conseguenza (Secondo Definizione EN 1990:2002)”, come possiamo vedere nelle immagini sotto riportate, il campo “Adeguata giustificazione se inferiore a CC3” compare solo se il campo “Classi di conseguenza” assume i valori “CC1” e CC2”, ma non nel caso assuma valore “CC3”.
+
+
+
