@@ -134,7 +134,7 @@ Inoltre, per aiutare la compilazione, si sono aggiunti dei tooltip al passaggio 
 .. image:: img/note_form3.PNG
   :align: center
 
-Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi presenti, si è inserito in fondo al form il campo "note".
+Per poter aggiungere tutte quelle informazioni che non trovano spazio nei campi presenti, si è inserito in fondo al form il campo “note”.
 
 È stata necessaria la creazione di una “tabella figlia” per gli allegati, considerando come “tabella padre” il layer “Ponti e Viadotti”. Questo è stato fatto principalmente per due motivi: a) natura di alcuni dati, che potrebbero essere multipli per la stessa geometria; b) per una migliore organizzazione del form. 
 
