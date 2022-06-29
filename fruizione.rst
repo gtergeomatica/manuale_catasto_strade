@@ -149,3 +149,22 @@ Si aprirà il form di compilazione degli attributi, ma questa volta in fondo all
    :align: center
 
 **ATTENZIONE**: per cancellare una geometria, sarà prima necessario cancellare i dati nelle "tabelle figlie", se questi sono prsenti.
+"""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+Ordinanze 
+""""""""""""""""""""""""""""""""""""""""""""""
+**Note e istruzioni alla compilazione del form**
+
+Il progetto denominato "Ordinanze", originariamente indicato come "Transitabilità" è stato realizzato per ospitare le ordinanze di limitazione alla viabilità permanenti e temporanee.
+
+
+
+
+Incidenti
+""""""""""""""""""""""""""""""""""""""""""""""
+**Note e istruzioni alla compilazione del form**
+
+Il progetto denominato 'Incidenti'
+
