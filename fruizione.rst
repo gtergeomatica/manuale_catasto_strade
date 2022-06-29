@@ -149,6 +149,8 @@ Si aprirà il form di compilazione degli attributi, ma questa volta in fondo all
    :align: center
 
 **ATTENZIONE**: per cancellare una geometria, sarà prima necessario cancellare i dati nelle "tabelle figlie", se questi sono prsenti.
+
+
 """""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -158,6 +160,34 @@ Ordinanze
 **Note e istruzioni alla compilazione del form**
 
 Il progetto denominato "Ordinanze", originariamente indicato come "Transitabilità" è stato realizzato per ospitare le ordinanze di limitazione alla viabilità permanenti e temporanee.
+Il progetto è incentrato su un unico layer denominato appunto Ordinanze, la cui stilizzazione categorizzata permette di:
+* distinguere tra le varie tipologie di ordinaza (Senso unico Alternato, Limitazione, Chiusura) e tipologia di ostacolo (es. cantiere).
+* limitare la visibilità di ordinanze non più in vigore 
+* segnalalare la data di inzio della limitazione per ordinanze non acora in vigore.
+
+Il form di inserimento dati è diviso in tre parti:
+* Posizione:  informazioni minime necessarie al funzionamento del CS (Codice strada e Progressiva inizale e finale)
+  N.B.: Il layer ordinanze accetta solo gemetrie di tipo lineari, è perciò necessario che la prossiva inziale e finale siano diverse. In caso di Ordinaze che riportino una sola indicazione chiometrica si richiede di inserire come progressiva finale la progressiva indicata + 1.
+* Limitazione: dati relativi alla limitazione
+* Altre informazioni: Note (campo utili ad annotazioni libere) e Data eliminazione (campo da compilare)  per nascondere elementi dalla mappa.
+
+Tra i dati relativi alla limitazioni, in particolare:
+* Numero e data delibera fanno riferimento ai dati identificativi del provvedimento
+* Provvedimeto richiede il caricamento obbligatorio di un allegato in formato .pdf
+* Tipologia limitazione distingue le limitazioni temporane e permanenti 
+* Data entrata in vigore e  data rimozione sono richieste per il calcolo automatico del campo Durata giorni
+* Tipologia ostacolo e tipologia ordinanza forniscono dettagli sulla tipologia di limitazione
+* Descrizione è un campo libero in cui si consiglia di copiare e incollare l'oggetto del provvedimento in formato pdf
+* Revoca, da compilare in caso di revoca del provvedimento prima della Data di rimozione prevista
+* Campi relativi a Richesta Esterna (da gestore di sottoservizi) sono dedicati al provvediemnto collegato al provvedimento principale
+
+La tabella sottostante il layer Ordinanze (denominata per ragioni 'storiche' t_transitabilita) è dotata ad una procedura automatica (trigger) che si occupa della gestione delle mail di notifica nei seguenti casi:
+* Inserimento nuova ordinanza 
+* Modifica ordinanza esistente
+* Revoca ordinanza attraverso compilazione di apposito campo Revoca
+
+**ATTENZIONE**: Per ordinanze che riguardano tutte le strade provinciale, ad esempio 'Obbligo di catene', per evitare di appesantire visivamente la mappa si consiglia di creare un pop-uo all'apertura della mappa (tramite apposito script javascript per Lizmap). 
+
 
 
 
