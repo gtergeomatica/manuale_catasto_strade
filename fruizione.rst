@@ -160,6 +160,11 @@ Ordinanze
 **Note e istruzioni alla compilazione del form**
 
 Il progetto denominato "Ordinanze", originariamente indicato come "Transitabilità", è stato realizzato per ospitare le ordinanze di limitazione alla viabilità permanenti e temporanee.
+
+
+.. image:: img/ordinanze_map.PNG
+   :align: center
+
 Il progetto è incentrato su un unico layer denominato appunto Ordinanze, la cui stilizzazione categorizzata permette di:
 
 
@@ -173,6 +178,9 @@ Il form di inserimento dati è diviso in tre parti:
   N.B.: Il layer ordinanze accetta solo gemetrie di tipo lineare, è perciò necessario che la prossiva inziale e finale siano diverse. In caso di Ordinaze che riportino una sola indicazione chiometrica si richiede di inserire come progressiva finale la progressiva indicata + 1.
 * Limitazione: dati relativi alla limitazione
 * Altre informazioni: Note (campo per annotazioni libere) e Data eliminazione (campo da compilare  per nascondere elementi dalla mappa).
+
+.. image:: img/form_ordinanze.PNG
+   :align: center
 
 Tra i dati relativi alla limitazioni, in particolare:
 
