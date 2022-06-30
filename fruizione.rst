@@ -202,12 +202,25 @@ La tabella sottostante il layer Ordinanze (denominata per ragioni 'storiche' t_t
 **ATTENZIONE**: Per ordinanze che riguardano tutte le strade provinciali, ad esempio 'Obbligo di catene', per evitare di appesantire visivamente la mappa si consiglia di creare un pop-up all'apertura della mappa (tramite apposito script javascript per Lizmap). 
 
 
-
+""""""""""""""""""""""""""""""""""""""""""""""
 
 
 Incidenti
 """"""""""""""""""""""""""""""""""""""""""""""
-**Note e istruzioni alla compilazione del form**
+**Note**
 
-Il progetto denominato 'Incidenti'
+Il progetto denominato 'Incidenti' è stato realizzato per la mappatura dei dati sugli incidenti stradali comunicati dal servizio TWIST di Regione Piemonte e semplificati dalla Provincia di Novara per l'archiviazione sul CS. 
+Il progetto contine due soli tematismi princiali  
+
+* Incidenti - Layer puntuale in cui ad ogni punto corrisponde un incidente con le relative informazioni rilevate dalle forze dell'ordine. I dati relativi alla localizzazione degli incidenti devono essere validati 
+* Mappa di concentrazione  - Le mappe di concentrazione (Heatmap) sono strumenti utili per identificare la densità di punti che rappresentano un certo fenomeno. La mappa di concentrazione degli incidenti ha la finalità di mostrare i punti della rete stradale in cui si verificarano più incidenti (black points o punti neri). Per la valutazione dei punti neri si segnala di considereare che che localizzazione dei punti deve essere prima validata attraverso le opportune maschere di verifica e l'arco temporale dei dati presenti sul CS potrebbe essere non rappresentativa del fenomeno.
+
+**Validazione geometrica e alfanumerica dei dati**
+
+Il layer Incidenti è può essere modificato attraverso l'apposito pannello Modifica dati. Le possibili casi su cui è necessario intervenire sono due:
+
+* Incidente con localizzazione errata - 
+* Incidente non localizzato - Per visualizzare gli incidenti non localizati accedere al pannello Dati, dove è presente l'apposita tabella. Si consigli a di procedere alla correzione inserendo Progressiva e Codice Strada.
+
+**ATTENZIONE**:  In entrambi i casi si richiede di selezionare il campo 'Dati corretti manualmente'.
 
