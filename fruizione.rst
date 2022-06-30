@@ -233,6 +233,7 @@ Il layer Incidenti è può essere modificato attraverso l'apposito pannello Modi
 **ATTENZIONE**:  In entrambi i casi si richiede di selezionare il campo 'Dati corretti manualmente'.
 
 Il form di inserimento dati è diviso in tre parti:
+
 * Dati Incidente - contenente i dati descrittivi degli incidenti cosi come trasmessi dalle forze dell'ordine (es. data e ora, veicoli coincolti, nnumeor morti e feriti) - i dati qui presenti non sono modificabili
 * Correzione Posizione - sezione in cui confrontare i Dati elaborati automaticamente dal Catasto e i Dati originali forniti dalle forze dell'ordine  Eventualmente modificare i dati utili al CS e segnarli come modificati manualmente.
 * Dati Catasto - Altre informazioni, Note (campo per annotazioni libere) e Data eliminazione (campo da compilare  per nascondere elementi dalla mappa).
