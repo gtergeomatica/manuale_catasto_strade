@@ -210,7 +210,11 @@ Incidenti
 **Note**
 
 Il progetto denominato 'Incidenti' è stato realizzato per la mappatura dei dati sugli incidenti stradali comunicati dal servizio TWIST di Regione Piemonte e semplificati dalla Provincia di Novara per l'archiviazione sul CS. 
-I dati vengono importati nel GeoDB in apposita tabella (t_incidenti) tramite script python appositamente predisposto da Gter. Per aggiungere nuovi dati alla tabella bisogna fare richiesta via mail o ticket con allegato un file in formato con le specifiche concordate. Il formato deve essere xlsx e i nomi delle colonne devono corrispondere a quelle definite in fase di primo invio.
+
+I dati vengono importati nel GeoDB in apposita tabella (t_incidenti) tramite script python appositamente predisposto da Gter. 
+Lo script si occupa di localizzare gli incidenti sulla rete stradale ricostruendo il codice Strada e la progressiva a partire dalle coordinate e viceversa.
+Per aggiungere nuovi dati alla tabella bisogna fare richiesta via mail o ticket con allegato un file in formato con le specifiche concordate. Il formato deve essere xlsx e i nomi delle colonne devono corrispondere a quelle definite in fase di primo invio.
+
 Il progetto contine due soli tematismi princiali  
 
 * Incidenti - Layer puntuale in cui ad ogni punto corrisponde un incidente con le relative informazioni rilevate dalle forze dell'ordine. I dati relativi alla localizzazione degli incidenti devono essere validati 
