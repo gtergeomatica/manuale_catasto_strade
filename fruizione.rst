@@ -210,17 +210,32 @@ Incidenti
 **Note**
 
 Il progetto denominato 'Incidenti' è stato realizzato per la mappatura dei dati sugli incidenti stradali comunicati dal servizio TWIST di Regione Piemonte e semplificati dalla Provincia di Novara per l'archiviazione sul CS. 
+I dati vengono importati nel GeoDB in apposita tabella (t_incidenti) tramite script python appositamente predisposto da Gter. Per aggiungere nuovi dati alla tabella bisogna fare richiesta via mail o ticket con allegato un file in formato con le specifiche concordate. Il formato deve essere xlsx e i nomi delle colonne devono corrispondere a quelle definite in fase di primo invio.
 Il progetto contine due soli tematismi princiali  
 
 * Incidenti - Layer puntuale in cui ad ogni punto corrisponde un incidente con le relative informazioni rilevate dalle forze dell'ordine. I dati relativi alla localizzazione degli incidenti devono essere validati 
-* Mappa di concentrazione  - Le mappe di concentrazione (Heatmap) sono strumenti utili per identificare la densità di punti che rappresentano un certo fenomeno. La mappa di concentrazione degli incidenti ha la finalità di mostrare i punti della rete stradale in cui si verificarano più incidenti (black points o punti neri). Per la valutazione dei punti neri si segnala di considereare che che localizzazione dei punti deve essere prima validata attraverso le opportune maschere di verifica e l'arco temporale dei dati presenti sul CS potrebbe essere non rappresentativa del fenomeno.
+* Mappa di concentrazione  - Le mappe di concentrazione (Heatmap) sono strumenti utili per identificare la densità di punti che rappresentano un certo fenomeno. La mappa di concentrazione degli incidenti ha la finalità di mostrare i punti della rete stradale in cui si verificarano più incidenti (black points o punti neri). Per la valutazione dei punti neri si segnala di considereare che la localizzazione dei punti deve essere prima validata attraverso le opportune maschere di verifica e l'arco temporale dei dati presenti sul CS potrebbe essere non rappresentativa del fenomeno.
+
+.. image:: img/heatmap.PNG
+   :align: center
 
 **Validazione geometrica e alfanumerica dei dati**
 
-Il layer Incidenti è può essere modificato attraverso l'apposito pannello Modifica dati. Le possibili casi su cui è necessario intervenire sono due:
+Il layer Incidenti è può essere modificato attraverso l'apposito pannello Modifica dati. I possibili casi su cui è necessario intervenire sono due:
 
-* Incidente con localizzazione errata - 
-* Incidente non localizzato - Per visualizzare gli incidenti non localizati accedere al pannello Dati, dove è presente l'apposita tabella. Si consigli a di procedere alla correzione inserendo Progressiva e Codice Strada.
+* Incidente con localizzazione errata - Attivare la modifica tramite il pop-up o la tabella persente nel pannello Dati
+* Incidente non localizzato - Per visualizzare gli incidenti non localizati accedere al pannello Dati, dove è presente l'apposita tabella denominata 'Incidenti (dato geometrico assente)'.
 
 **ATTENZIONE**:  In entrambi i casi si richiede di selezionare il campo 'Dati corretti manualmente'.
 
+Il form di inserimento dati è diviso in tre parti:
+* Dati Incidente - contenente i dati descrittivi degli incidenti cosi come trasmessi dalle forze dell'ordine (es. data e ora, veicoli coincolti, nnumeor morti e feriti) - i dati qui presenti non sono modificabili
+* Correzione Posizione - sezione in cui confrontare i Dati elaborati automaticamente dal Catasto e i Dati originali forniti dalle forze dell'ordine  Eventualmente modificare i dati utili al CS e segnarli come modificati manualmente.
+* Dati Catasto - Altre informazioni, Note (campo per annotazioni libere) e Data eliminazione (campo da compilare  per nascondere elementi dalla mappa).
+
+
+.. image:: img/form_correzione_posizione.PNG
+   :align: center
+
+
+   
