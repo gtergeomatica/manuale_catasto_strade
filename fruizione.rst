@@ -238,9 +238,57 @@ Il form di inserimento dati è diviso in tre parti:
 * Correzione Posizione - sezione in cui confrontare i Dati elaborati automaticamente dal Catasto e i Dati originali forniti dalle forze dell'ordine  Eventualmente modificare i dati utili al CS e segnarli come modificati manualmente.
 * Dati Catasto - Altre informazioni, Note (campo per annotazioni libere) e Data eliminazione (campo da compilare  per nascondere elementi dalla mappa).
 
-
 .. image:: img/form_correzione_posizione.PNG
    :align: center
+   
+
+""""""""""""""""""""""""""""""""""""""""""""""
+
+
+Concessioni
+""""""""""""""""""""""""""""""""""""""""""""""
+**Note**
+
+Il progetto Concessioni, pubblicato nella repository Lizmap denominata 'Ufficio Concessioni' è stato ralizzato allo scopo di visualizzare su CS le istanze di concessioni gestite tramite la piattaforma Istanze-Online (Gis&Web).
+
+Per consentire l'integrazione con il catasto sono state predisposte due tabelle: una per le concessioni puntuali (eventop.t_concessioni_p) e una per le concessioni lineari (eventol.t_concessioni_l) e le rispettive viste.
+Gis&Web si occupa della sincronizzazione dei dati secondo modalità e tempistiche volte ad aggionrnare lo stasus delle istanze. Non si tratta però di una replica massiva di dati ma di un trasferimento di alcune info minime quali ad esempio codice strada e progressive, tipo concessione e scadenza. Un campo è destinato a contenere il link per accedere, previa autenticazione, alla pagina del procedimento sul portale Istanze Online.
+
+Le concessioni puntuali e lineari sono visuzlizzate con simbologia categorizzata realizzata sulla base delle tipologie di istanze gestite dalla piattaforma Istanze-Online, cosi come definite al seguente servizio Web:
+https://provincianovara.istanze-online.it/iol_strade/resources/getTipoIstanza 
+e sulla base di queste importate nel CS in apposita tabella dello schema normativa.
+
+.. image:: img/concessioni.PNG
+   :align: center
+
+
+""""""""""""""""""""""""""""""""""""""""""""""
+
+
+Progetto correzioni
+""""""""""""""""""""""""""""""""""""""""""""""
+**Note**
+
+Nella repository privata è presente un progetto denominato nuovo_cs_novara_correzioni.qgs dedicato alle eventuali correzioni da effettuare ai temestismi fondamentali del CS, in particolare Route, Eventi lineati e Progressive.
+Che in altri progetti non sono configurati per essere modificati al fine di evitare modifiche accidentali o di utenti non autorizzati.
+Nello specifico il progetto è stato predisposto per:
+
+* modifica delle denominazioni convenzionali delle Route 
+* modifica delle progressive iniziali e finali delle route e degli elemnti stradali in casi di mancata corrispondenza coni cippi.
+
+  **ATTENZIONE** - In caso di correzione progressive ricordarsi di aggiornare parallelamente elementi stradali e route.
+               Successivamente è necessario svolgere la seguente procedura per 'rigenenrare' il layer dedicato alle progressive (t_progressive)
+               utilizzando i dati presenti nella vista v_progressive che sulla base degli elemengti stradali è calcolata:
+
+               1 - effettuare modifiche sulle tabelle route e elementi_stradali
+               2 - backup tabella statica progressive nello storico  
+                     create table storico.t_progressive_[data] as (select * from geometrie.t_progressive tp);
+               3 - truncate tabella statica t_progressive
+                   truncate geometrie.t_progressive 
+      
+               4 - rigenerazione progressiva con query da v_progressive        
+                   insert into geometrie.t_progressive select * from geometrie.v_progressive 
+
 
 
    
