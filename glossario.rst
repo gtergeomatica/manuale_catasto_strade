@@ -31,7 +31,14 @@ Si tatta degli elementi alla base del Catasto Strade di livello 2:
 * Il layer *elementi_stradali* contiene le geometrie degli assi stradali (linee) che partono da una giunzione e arrivano ad un'altra e sono individuate da una prog_ini e da una prog_fin.
 * Infine il layer *route* contiene le geometrie degli assi stradali unite fra di loro per ogni strada sulla base del cod_strada
 
-A questi layer di base è affiancato il layer *progressive* che contine le indicazioni chilometriche calcolate sulla base delle progressive amministrative iniziali e finali degli elementi stradali con visualizzazione variabile in funzione della scala.
+A questi layer di base sono affiancati:
+
+* il layer *progressive* che contine le indicazioni chilometriche calcolate sulla base delle progressive amministrative iniziali e finali degli elementi stradali con visualizzazione variabile in funzione della scala
+
+* le viste elementi Stradali virtuali e elementi strdali completi: due viste create allo scopo di verficare la presenza di interruzioni tra gli elementi stradali che costituiscono le route. Idealmente, a parità di codice strada gli elementi stradali dovrebbero essere contigui tale per cui è possibile ricavare da questi una Linestring. Nei casi in cui sono presenti interruzioni importanti la creazione della Linestring non è possibile e si ottiene necessariamente una geometria di tipo Multilinestring. Ciò si traduce nel difficoltà di creazione eveniti lineari in corrispondenza di interruzioni per i problemi derivanti dalla gestione della procedura di segmentazione dinamica che consente di ottenere dalle coordinate le progressive ( vedi trigger snap_geometry_line).
+Elementi Stradali virtuali rappresentano degli elementi stradali fittizi e quindi detti virtuali, generati in corrispondenza delle interruzioni tragli elementi stradali di una stessa route.
+Elementi stradali completi contiene la totalità  degli elementi stradali 'reali' e degli elemetni stradali virtuali, è la vista che può essere utilizzata al posto degli elementi_stradali per ottenere un grafo stradale senza interruzioni.
+
 
 
 
