@@ -9,5 +9,5 @@
 - Personalizzazione per *Provincia di Novara* in branch **novara**
 
 
-# Ricordarsi di mantenere sempre aggiornato il master!
+## Ricordarsi di mantenere sempre aggiornato il master laddove serve. I due CS sono ormai gestiti come due applicazioni quasi del tutto indipendeti.
 
