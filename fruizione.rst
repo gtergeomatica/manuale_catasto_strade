@@ -281,13 +281,15 @@ Nello specifico il progetto è stato predisposto per:
                utilizzando i dati presenti nella vista v_progressive che sulla base degli elemengti stradali è calcolata:
 
                1 - effettuare modifiche sulle tabelle route e elementi_stradali
+               
                2 - backup tabella statica progressive nello storico  
                      create table storico.t_progressive_[data] as (select * from geometrie.t_progressive tp);
+                     
                3 - truncate tabella statica t_progressive
-                   truncate geometrie.t_progressive 
+                     truncate geometrie.t_progressive;
       
                4 - rigenerazione progressiva con query da v_progressive        
-                   insert into geometrie.t_progressive select * from geometrie.v_progressive 
+                     insert into geometrie.t_progressive select * from geometrie.v_progressive;
 
 
 
