@@ -274,11 +274,11 @@ Che in altri progetti non sono configurati per essere modificati al fine di evit
 Nello specifico il progetto è stato predisposto per:
 
 * modifica delle denominazioni convenzionali delle Route 
-* modifica delle progressive iniziali e finali delle route e degli elemnti stradali in casi di mancata corrispondenza coni cippi.
+* modifica delle progressive iniziali e finali delle route e degli elemnti stradali in casi di mancata corrispondenza con i cippi
 
   **ATTENZIONE** - In caso di correzione progressive ricordarsi di aggiornare parallelamente elementi stradali e route.
                Successivamente è necessario svolgere la seguente procedura per 'rigenenrare' il layer dedicato alle progressive (t_progressive)
-               utilizzando i dati presenti nella vista v_progressive che sulla base degli elemengti stradali è calcolata:
+               utilizzando i dati presenti nella vista v_progressive che sulla base degli elementi stradali è calcolata:
 
                1 - effettuare modifiche sulle tabelle route e elementi_stradali
                
@@ -291,6 +291,6 @@ Nello specifico il progetto è stato predisposto per:
                4 - rigenerazione progressiva con query da v_progressive        
                      insert into geometrie.t_progressive select * from geometrie.v_progressive;
 
-
+La procedura descritta sopra va seguita anche in seguito alle cessione, totale o parziale, di una strada.
 
    
