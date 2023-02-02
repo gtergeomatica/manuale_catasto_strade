@@ -291,6 +291,7 @@ Nello specifico il progetto è stato predisposto per:
                4 - rigenerazione progressiva con query da v_progressive        
                      insert into geometrie.t_progressive select * from geometrie.v_progressive;
 
-La procedura descritta sopra va seguita anche in seguito alle cessione, totale o parziale, di una strada.
+Questo progetto può essere utilizzato anche in caso di richiesta di cessione totale o parziale di una strada. In questo caso è sufficienbte aggiornare la colonna data_cessione della tabella route ed elementi stradali per tutte le feature identificate dal codice stradale della strada ceduta (cessione totale). In caso di cessione parziale, è necessario sempre aggiornare la colonna data_cessione, ma bisogna analizzare caso per caso in funzione del tratto ceduto.
+In seguito alle cessione, totale o parziale, di una strada va seguita la procedura sopra per il ricalcolo delle progressive.
 
    
